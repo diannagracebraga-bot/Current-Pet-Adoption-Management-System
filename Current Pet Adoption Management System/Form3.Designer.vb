@@ -2,8 +2,6 @@
 Partial Class Form3
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -14,256 +12,223 @@ Partial Class Form3
         End Try
     End Sub
 
-    'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
+    Friend WithEvents btnBack As System.Windows.Forms.Button
+    Friend WithEvents pnlRegister As System.Windows.Forms.Panel
+    Friend WithEvents lblIcon As System.Windows.Forms.Label
+    Friend WithEvents lblTitle As System.Windows.Forms.Label
+    Friend WithEvents lblSubtitle As System.Windows.Forms.Label
+    Friend WithEvents lblUser As System.Windows.Forms.Label
+    Friend WithEvents txtUser As System.Windows.Forms.TextBox
+    Friend WithEvents lblPass As System.Windows.Forms.Label
+    Friend WithEvents txtPass As System.Windows.Forms.TextBox
+    Friend WithEvents lblConfirm As System.Windows.Forms.Label
+    Friend WithEvents txtConfirm As System.Windows.Forms.TextBox
+    Friend WithEvents chkShowPass As System.Windows.Forms.CheckBox
+    Friend WithEvents btnRegister As System.Windows.Forms.Button
+    Friend WithEvents lnkLogin As System.Windows.Forms.LinkLabel
+
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3))
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.PanelHeader = New System.Windows.Forms.Panel()
-        Me.PanelBottom = New System.Windows.Forms.Panel()
-        Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.pnlRegister = New System.Windows.Forms.Panel()
+        Me.lblIcon = New System.Windows.Forms.Label()
+        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.lblSubtitle = New System.Windows.Forms.Label()
+        Me.lblUser = New System.Windows.Forms.Label()
+        Me.txtUser = New System.Windows.Forms.TextBox()
+        Me.lblPass = New System.Windows.Forms.Label()
+        Me.txtPass = New System.Windows.Forms.TextBox()
+        Me.lblConfirm = New System.Windows.Forms.Label()
+        Me.txtConfirm = New System.Windows.Forms.TextBox()
+        Me.chkShowPass = New System.Windows.Forms.CheckBox()
+        Me.btnRegister = New System.Windows.Forms.Button()
+        Me.lnkLogin = New System.Windows.Forms.LinkLabel()
+        Me.pnlRegister.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TextBox3
+        'btnBack
         '
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Segoe UI", 16.2!)
-        Me.TextBox3.Location = New System.Drawing.Point(339, 289)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox3.Size = New System.Drawing.Size(417, 43)
-        Me.TextBox3.TabIndex = 24
+        Me.btnBack.BackColor = System.Drawing.Color.White
+        Me.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBack.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnBack.Location = New System.Drawing.Point(525, 20)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(160, 32)
+        Me.btnBack.TabIndex = 0
+        Me.btnBack.Text = "← Back to Homepage"
+        Me.btnBack.UseVisualStyleBackColor = False
         '
-        'TextBox4
+        'pnlRegister
         '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Font = New System.Drawing.Font("Segoe UI", 16.2!)
-        Me.TextBox4.Location = New System.Drawing.Point(339, 212)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(417, 43)
-        Me.TextBox4.TabIndex = 23
+        Me.pnlRegister.BackColor = System.Drawing.Color.White
+        Me.pnlRegister.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlRegister.Controls.Add(Me.lblIcon)
+        Me.pnlRegister.Controls.Add(Me.lblTitle)
+        Me.pnlRegister.Controls.Add(Me.lblSubtitle)
+        Me.pnlRegister.Controls.Add(Me.lblUser)
+        Me.pnlRegister.Controls.Add(Me.txtUser)
+        Me.pnlRegister.Controls.Add(Me.lblPass)
+        Me.pnlRegister.Controls.Add(Me.txtPass)
+        Me.pnlRegister.Controls.Add(Me.lblConfirm)
+        Me.pnlRegister.Controls.Add(Me.txtConfirm)
+        Me.pnlRegister.Controls.Add(Me.chkShowPass)
+        Me.pnlRegister.Controls.Add(Me.btnRegister)
+        Me.pnlRegister.Controls.Add(Me.lnkLogin)
+        Me.pnlRegister.Location = New System.Drawing.Point(139, 50)
+        Me.pnlRegister.Name = "pnlRegister"
+        Me.pnlRegister.Size = New System.Drawing.Size(360, 460)
+        Me.pnlRegister.TabIndex = 1
         '
-        'Label4
+        'lblIcon
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 16.2!)
-        Me.Label4.Location = New System.Drawing.Point(176, 292)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(146, 38)
-        Me.Label4.TabIndex = 22
-        Me.Label4.Text = "Password :"
+        Me.lblIcon.Font = New System.Drawing.Font("Segoe UI Emoji", 24.0!)
+        Me.lblIcon.Location = New System.Drawing.Point(130, 12)
+        Me.lblIcon.Name = "lblIcon"
+        Me.lblIcon.Size = New System.Drawing.Size(100, 40)
+        Me.lblIcon.TabIndex = 0
+        Me.lblIcon.Text = "🐱 🐶"
+        Me.lblIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label5
+        'lblTitle
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI", 16.2!)
-        Me.Label5.Location = New System.Drawing.Point(176, 215)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(156, 38)
-        Me.Label5.TabIndex = 21
-        Me.Label5.Text = "Username :"
+        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(27, Byte), Integer))
+        Me.lblTitle.Location = New System.Drawing.Point(15, 55)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(328, 32)
+        Me.lblTitle.TabIndex = 1
+        Me.lblTitle.Text = "Create an Account"
+        Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'TextBox1
+        'lblSubtitle
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Segoe UI", 16.2!)
-        Me.TextBox1.Location = New System.Drawing.Point(339, 371)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox1.Size = New System.Drawing.Size(417, 43)
-        Me.TextBox1.TabIndex = 17
+        Me.lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(105, Byte), Integer))
+        Me.lblSubtitle.Location = New System.Drawing.Point(15, 90)
+        Me.lblSubtitle.Name = "lblSubtitle"
+        Me.lblSubtitle.Size = New System.Drawing.Size(328, 20)
+        Me.lblSubtitle.TabIndex = 2
+        Me.lblSubtitle.Text = "Join PawHaven to adopt and list pets."
+        Me.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label1
+        'lblUser
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(228, 124)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(540, 69)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Create an Account"
+        Me.lblUser.AutoSize = True
+        Me.lblUser.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblUser.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblUser.Location = New System.Drawing.Point(30, 120)
+        Me.lblUser.Name = "lblUser"
+        Me.lblUser.Size = New System.Drawing.Size(64, 15)
+        Me.lblUser.TabIndex = 3
+        Me.lblUser.Text = "Username"
         '
-        'Label2
+        'txtUser
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 16.2!)
-        Me.Label2.Location = New System.Drawing.Point(78, 375)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(262, 38)
-        Me.Label2.TabIndex = 15
-        Me.Label2.Text = "Re-enter password :"
+        Me.txtUser.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.txtUser.Location = New System.Drawing.Point(30, 138)
+        Me.txtUser.Name = "txtUser"
+        Me.txtUser.Size = New System.Drawing.Size(300, 25)
+        Me.txtUser.TabIndex = 4
         '
-        'Panel2
+        'lblPass
         '
-        Me.Panel2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Panel2.BackColor = System.Drawing.Color.FloralWhite
-        Me.Panel2.Controls.Add(Me.CheckBox2)
-        Me.Panel2.Controls.Add(Me.LinkLabel1)
-        Me.Panel2.Controls.Add(Me.TextBox3)
-        Me.Panel2.Controls.Add(Me.Button2)
-        Me.Panel2.Controls.Add(Me.TextBox1)
-        Me.Panel2.Controls.Add(Me.PictureBox2)
-        Me.Panel2.Controls.Add(Me.TextBox4)
-        Me.Panel2.Controls.Add(Me.CheckBox1)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Controls.Add(Me.Label5)
-        Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Location = New System.Drawing.Point(456, 212)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(990, 592)
-        Me.Panel2.TabIndex = 26
+        Me.lblPass.AutoSize = True
+        Me.lblPass.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblPass.Location = New System.Drawing.Point(30, 175)
+        Me.lblPass.Name = "lblPass"
+        Me.lblPass.Size = New System.Drawing.Size(59, 15)
+        Me.lblPass.TabIndex = 5
+        Me.lblPass.Text = "Password"
         '
-        'CheckBox2
+        'txtPass
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox2.Location = New System.Drawing.Point(761, 304)
-        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(18, 17)
-        Me.CheckBox2.TabIndex = 25
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.txtPass.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.txtPass.Location = New System.Drawing.Point(30, 193)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPass.Size = New System.Drawing.Size(300, 25)
+        Me.txtPass.TabIndex = 6
         '
-        'LinkLabel1
+        'lblConfirm
         '
-        Me.LinkLabel1.ActiveLinkColor = System.Drawing.Color.Black
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.Location = New System.Drawing.Point(398, 498)
-        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(297, 28)
-        Me.LinkLabel1.TabIndex = 20
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Already have an account? Login"
+        Me.lblConfirm.AutoSize = True
+        Me.lblConfirm.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblConfirm.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblConfirm.Location = New System.Drawing.Point(30, 230)
+        Me.lblConfirm.Name = "lblConfirm"
+        Me.lblConfirm.Size = New System.Drawing.Size(107, 15)
+        Me.lblConfirm.TabIndex = 7
+        Me.lblConfirm.Text = "Confirm Password"
         '
-        'Button2
+        'txtConfirm
         '
-        Me.Button2.BackColor = System.Drawing.Color.DarkOliveGreen
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(421, 439)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(224, 41)
-        Me.Button2.TabIndex = 19
-        Me.Button2.Text = "Register"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.txtConfirm.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.txtConfirm.Location = New System.Drawing.Point(30, 248)
+        Me.txtConfirm.Name = "txtConfirm"
+        Me.txtConfirm.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtConfirm.Size = New System.Drawing.Size(300, 25)
+        Me.txtConfirm.TabIndex = 8
         '
-        'PictureBox2
+        'chkShowPass
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Green
-        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(421, 38)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(124, 84)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 23
-        Me.PictureBox2.TabStop = False
+        Me.chkShowPass.AutoSize = True
+        Me.chkShowPass.Font = New System.Drawing.Font("Segoe UI", 8.25!)
+        Me.chkShowPass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.chkShowPass.Location = New System.Drawing.Point(30, 285)
+        Me.chkShowPass.Name = "chkShowPass"
+        Me.chkShowPass.Size = New System.Drawing.Size(113, 17)
+        Me.chkShowPass.TabIndex = 9
+        Me.chkShowPass.Text = "Show passwords"
+        Me.chkShowPass.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'btnRegister
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(761, 385)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(18, 17)
-        Me.CheckBox1.TabIndex = 21
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.btnRegister.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRegister.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.btnRegister.ForeColor = System.Drawing.Color.White
+        Me.btnRegister.Location = New System.Drawing.Point(30, 318)
+        Me.btnRegister.Name = "btnRegister"
+        Me.btnRegister.Size = New System.Drawing.Size(300, 38)
+        Me.btnRegister.TabIndex = 10
+        Me.btnRegister.Text = "Register Account"
+        Me.btnRegister.UseVisualStyleBackColor = False
         '
-        'PanelHeader
+        'lnkLogin
         '
-        Me.PanelHeader.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PanelHeader.AutoSize = True
-        Me.PanelHeader.BackColor = System.Drawing.Color.ForestGreen
-        Me.PanelHeader.Location = New System.Drawing.Point(-176, -1)
-        Me.PanelHeader.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelHeader.Name = "PanelHeader"
-        Me.PanelHeader.Size = New System.Drawing.Size(2072, 82)
-        Me.PanelHeader.TabIndex = 27
-        '
-        'PanelBottom
-        '
-        Me.PanelBottom.BackColor = System.Drawing.Color.ForestGreen
-        Me.PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelBottom.Location = New System.Drawing.Point(0, 855)
-        Me.PanelBottom.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelBottom.Name = "PanelBottom"
-        Me.PanelBottom.Size = New System.Drawing.Size(1895, 36)
-        Me.PanelBottom.TabIndex = 28
+        Me.lnkLogin.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.lnkLogin.LinkColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lnkLogin.Location = New System.Drawing.Point(30, 370)
+        Me.lnkLogin.Name = "lnkLogin"
+        Me.lnkLogin.Size = New System.Drawing.Size(300, 25)
+        Me.lnkLogin.TabIndex = 11
+        Me.lnkLogin.TabStop = True
+        Me.lnkLogin.Text = "Already have an account? Log in"
+        Me.lnkLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form3
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.BackColor = System.Drawing.Color.Beige
-        Me.ClientSize = New System.Drawing.Size(1895, 891)
-        Me.Controls.Add(Me.PanelBottom)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.PanelHeader)
-        Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.MinimumSize = New System.Drawing.Size(996, 738)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(704, 540)
+        Me.Controls.Add(Me.pnlRegister)
+        Me.Controls.Add(Me.btnBack)
+        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Form3"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form3"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "PawHaven - Register"
+        Me.pnlRegister.ResumeLayout(False)
+        Me.pnlRegister.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Button2 As Button
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents PanelHeader As Panel
-    Friend WithEvents PanelBottom As Panel
+
 End Class

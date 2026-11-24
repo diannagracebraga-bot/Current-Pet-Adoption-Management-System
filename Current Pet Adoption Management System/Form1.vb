@@ -72,6 +72,8 @@
         'a pet, and the procoesses and FAQs of GentriPets Adopt
     End Sub
 
+    Private Sub btnBrowse_Click(sender As Object, e As EventArgs) Handles btnBrowse.Click
 
+    End Sub
 End Class
 

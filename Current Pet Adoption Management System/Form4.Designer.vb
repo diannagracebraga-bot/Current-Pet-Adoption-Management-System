@@ -1,9 +1,7 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form4
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -14,1045 +12,881 @@ Partial Class Form4
         End Try
     End Sub
 
-    'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    Friend WithEvents btnRecords As System.Windows.Forms.Button
+    Friend WithEvents btnBack As System.Windows.Forms.Button
+    Friend WithEvents lblTitle As System.Windows.Forms.Label
+    Friend WithEvents lblSubtitle As System.Windows.Forms.Label
+    Friend WithEvents grpPetInfo As System.Windows.Forms.GroupBox
+    Friend WithEvents lblName As System.Windows.Forms.Label
+    Friend WithEvents txtName As System.Windows.Forms.TextBox
+    Friend WithEvents lblSpecies As System.Windows.Forms.Label
+    Friend WithEvents cboSpecies As System.Windows.Forms.ComboBox
+    Friend WithEvents lblAge As System.Windows.Forms.Label
+    Friend WithEvents txtAge As System.Windows.Forms.TextBox
+    Friend WithEvents lblGender As System.Windows.Forms.Label
+    Friend WithEvents rbMale As System.Windows.Forms.RadioButton
+    Friend WithEvents rbFemale As System.Windows.Forms.RadioButton
+    Friend WithEvents lblSize As System.Windows.Forms.Label
+    Friend WithEvents cboSize As System.Windows.Forms.ComboBox
+    Friend WithEvents lblColor As System.Windows.Forms.Label
+    Friend WithEvents txtColor As System.Windows.Forms.TextBox
+    Friend WithEvents lblBreed As System.Windows.Forms.Label
+    Friend WithEvents txtBreed As System.Windows.Forms.TextBox
+    Friend WithEvents grpHealth As System.Windows.Forms.GroupBox
+    Friend WithEvents lblLiveWith As System.Windows.Forms.Label
+    Friend WithEvents rbPetsYes As System.Windows.Forms.RadioButton
+    Friend WithEvents rbPetsNo As System.Windows.Forms.RadioButton
+    Friend WithEvents lblVaccinated As System.Windows.Forms.Label
+    Friend WithEvents rbVacYes As System.Windows.Forms.RadioButton
+    Friend WithEvents rbVacNo As System.Windows.Forms.RadioButton
+    Friend WithEvents lblVacStatus As System.Windows.Forms.Label
+    Friend WithEvents cboVacStatus As System.Windows.Forms.ComboBox
+    Friend WithEvents lblVacKind As System.Windows.Forms.Label
+    Friend WithEvents txtVacKind As System.Windows.Forms.TextBox
+    Friend WithEvents grpTraits As System.Windows.Forms.GroupBox
+    Friend WithEvents lblTemperament As System.Windows.Forms.Label
+    Friend WithEvents rbTemp1 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbTemp2 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbTemp3 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbTemp4 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbTemp5 As System.Windows.Forms.RadioButton
+    Friend WithEvents lblTempHint As System.Windows.Forms.Label
+    Friend WithEvents lblClinginess As System.Windows.Forms.Label
+    Friend WithEvents rbCling1 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbCling2 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbCling3 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbCling4 As System.Windows.Forms.RadioButton
+    Friend WithEvents rbCling5 As System.Windows.Forms.RadioButton
+    Friend WithEvents lblClingHint As System.Windows.Forms.Label
+    Friend WithEvents grpOwner As System.Windows.Forms.GroupBox
+    Friend WithEvents lblOwner As System.Windows.Forms.Label
+    Friend WithEvents txtOwner As System.Windows.Forms.TextBox
+    Friend WithEvents lblPhone As System.Windows.Forms.Label
+    Friend WithEvents txtPhone As System.Windows.Forms.TextBox
+    Friend WithEvents lblCity As System.Windows.Forms.Label
+    Friend WithEvents txtCity As System.Windows.Forms.TextBox
+    Friend WithEvents lblEmail As System.Windows.Forms.Label
+    Friend WithEvents txtEmail As System.Windows.Forms.TextBox
+    Friend WithEvents grpPhoto As System.Windows.Forms.GroupBox
+    Friend WithEvents picPet As System.Windows.Forms.PictureBox
+    Friend WithEvents btnUpload As System.Windows.Forms.Button
+    Friend WithEvents btnSave As System.Windows.Forms.Button
+
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton9 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton10 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton11 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton12 = New System.Windows.Forms.RadioButton()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.PanelHeader = New System.Windows.Forms.Panel()
-        Me.PanelBottom = New System.Windows.Forms.Panel()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnRecords = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.lblSubtitle = New System.Windows.Forms.Label()
+        Me.grpPetInfo = New System.Windows.Forms.GroupBox()
+        Me.lblName = New System.Windows.Forms.Label()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.lblSpecies = New System.Windows.Forms.Label()
+        Me.cboSpecies = New System.Windows.Forms.ComboBox()
+        Me.lblAge = New System.Windows.Forms.Label()
+        Me.txtAge = New System.Windows.Forms.TextBox()
+        Me.lblGender = New System.Windows.Forms.Label()
+        Me.rbMale = New System.Windows.Forms.RadioButton()
+        Me.rbFemale = New System.Windows.Forms.RadioButton()
+        Me.lblSize = New System.Windows.Forms.Label()
+        Me.cboSize = New System.Windows.Forms.ComboBox()
+        Me.lblColor = New System.Windows.Forms.Label()
+        Me.txtColor = New System.Windows.Forms.TextBox()
+        Me.lblBreed = New System.Windows.Forms.Label()
+        Me.txtBreed = New System.Windows.Forms.TextBox()
+        Me.grpHealth = New System.Windows.Forms.GroupBox()
+        Me.lblLiveWith = New System.Windows.Forms.Label()
+        Me.rbPetsYes = New System.Windows.Forms.RadioButton()
+        Me.rbPetsNo = New System.Windows.Forms.RadioButton()
+        Me.lblVaccinated = New System.Windows.Forms.Label()
+        Me.rbVacYes = New System.Windows.Forms.RadioButton()
+        Me.rbVacNo = New System.Windows.Forms.RadioButton()
+        Me.lblVacStatus = New System.Windows.Forms.Label()
+        Me.cboVacStatus = New System.Windows.Forms.ComboBox()
+        Me.lblVacKind = New System.Windows.Forms.Label()
+        Me.txtVacKind = New System.Windows.Forms.TextBox()
+        Me.grpTraits = New System.Windows.Forms.GroupBox()
+        Me.lblTemperament = New System.Windows.Forms.Label()
+        Me.rbTemp1 = New System.Windows.Forms.RadioButton()
+        Me.rbTemp2 = New System.Windows.Forms.RadioButton()
+        Me.rbTemp3 = New System.Windows.Forms.RadioButton()
+        Me.rbTemp4 = New System.Windows.Forms.RadioButton()
+        Me.rbTemp5 = New System.Windows.Forms.RadioButton()
+        Me.lblTempHint = New System.Windows.Forms.Label()
+        Me.lblClinginess = New System.Windows.Forms.Label()
+        Me.rbCling1 = New System.Windows.Forms.RadioButton()
+        Me.rbCling2 = New System.Windows.Forms.RadioButton()
+        Me.rbCling3 = New System.Windows.Forms.RadioButton()
+        Me.rbCling4 = New System.Windows.Forms.RadioButton()
+        Me.rbCling5 = New System.Windows.Forms.RadioButton()
+        Me.lblClingHint = New System.Windows.Forms.Label()
+        Me.grpOwner = New System.Windows.Forms.GroupBox()
+        Me.lblOwner = New System.Windows.Forms.Label()
+        Me.txtOwner = New System.Windows.Forms.TextBox()
+        Me.lblPhone = New System.Windows.Forms.Label()
+        Me.txtPhone = New System.Windows.Forms.TextBox()
+        Me.lblCity = New System.Windows.Forms.Label()
+        Me.txtCity = New System.Windows.Forms.TextBox()
+        Me.lblEmail = New System.Windows.Forms.Label()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.grpPhoto = New System.Windows.Forms.GroupBox()
+        Me.picPet = New System.Windows.Forms.PictureBox()
+        Me.btnUpload = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.grpPetInfo.SuspendLayout()
+        Me.grpHealth.SuspendLayout()
+        Me.grpTraits.SuspendLayout()
+        Me.grpOwner.SuspendLayout()
+        Me.grpPhoto.SuspendLayout()
+        CType(Me.picPet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label3
-        '
-        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Black", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.ForestGreen
-        Me.Label3.Location = New System.Drawing.Point(225, 104)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(639, 65)
-        Me.Label3.TabIndex = 14
-        Me.Label3.Text = "Set Your Pet for Adoption"
-        '
-        'Button4
-        '
-        Me.Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Button4.ForeColor = System.Drawing.Color.Black
-        Me.Button4.Location = New System.Drawing.Point(911, 16)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(159, 31)
-        Me.Button4.TabIndex = 13
-        Me.Button4.Text = "Back to homepage"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.BackColor = System.Drawing.SystemColors.Control
-        Me.Button5.Font = New System.Drawing.Font("Segoe UI Black", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(86, 105)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(109, 26)
-        Me.Button5.TabIndex = 15
-        Me.Button5.Text = "+Upload Image"
-        Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(235, 157)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(647, 25)
-        Me.Label1.TabIndex = 16
-        Me.Label1.Text = "Not financially capable enough anymore to take care of  your pet anymore?"
-        '
-        'Label2
-        '
-        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(472, 177)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(122, 25)
-        Me.Label2.TabIndex = 17
-        Me.Label2.Text = "Leave it to us"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label4.Location = New System.Drawing.Point(17, 39)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(57, 19)
-        Me.Label4.TabIndex = 18
-        Me.Label4.Text = "Name :"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label5.Location = New System.Drawing.Point(21, 66)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(44, 19)
-        Me.Label5.TabIndex = 19
-        Me.Label5.Text = "Age :"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label6.Location = New System.Drawing.Point(21, 89)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(41, 19)
-        Me.Label6.TabIndex = 20
-        Me.Label6.Text = "Sex :"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label7.Location = New System.Drawing.Point(21, 116)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(44, 19)
-        Me.Label7.TabIndex = 21
-        Me.Label7.Text = "Size :"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label8.Location = New System.Drawing.Point(21, 140)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(54, 19)
-        Me.Label8.TabIndex = 22
-        Me.Label8.Text = "Color :"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label9.Location = New System.Drawing.Point(21, 164)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(57, 19)
-        Me.Label9.TabIndex = 23
-        Me.Label9.Text = "Breed :"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(14, 29)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(166, 21)
-        Me.Label10.TabIndex = 24
-        Me.Label10.Text = "Home Requirements"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label11.Location = New System.Drawing.Point(14, 60)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(251, 15)
-        Me.Label11.TabIndex = 25
-        Me.Label11.Text = "Can they live with other pets like cats/dogs?"
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton1.Location = New System.Drawing.Point(254, 58)
-        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(43, 19)
-        Me.RadioButton1.TabIndex = 26
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "yes"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton2.Location = New System.Drawing.Point(291, 58)
-        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(39, 19)
-        Me.RadioButton2.TabIndex = 27
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "no"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.Black
-        Me.Label12.Location = New System.Drawing.Point(14, 85)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(155, 21)
-        Me.Label12.TabIndex = 28
-        Me.Label12.Text = "Vaccination Status:"
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.GroupBox1.BackColor = System.Drawing.Color.White
-        Me.GroupBox1.Controls.Add(Me.TextBox11)
-        Me.GroupBox1.Controls.Add(Me.Label30)
-        Me.GroupBox1.Controls.Add(Me.Label29)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.ForeColor = System.Drawing.Color.ForestGreen
-        Me.GroupBox1.Location = New System.Drawing.Point(49, 208)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(283, 222)
-        Me.GroupBox1.TabIndex = 29
-        Me.GroupBox1.TabStop = False
-        '
-        'TextBox11
-        '
-        Me.TextBox11.BackColor = System.Drawing.Color.White
-        Me.TextBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox11.Location = New System.Drawing.Point(85, 188)
-        Me.TextBox11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(168, 26)
-        Me.TextBox11.TabIndex = 42
-        '
-        'Label30
-        '
-        Me.Label30.BackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label30.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.ForeColor = System.Drawing.Color.DarkOliveGreen
-        Me.Label30.Location = New System.Drawing.Point(0, 0)
-        Me.Label30.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(283, 21)
-        Me.Label30.TabIndex = 37
-        Me.Label30.Text = "Pet Information:"
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label29.Location = New System.Drawing.Point(13, 190)
-        Me.Label29.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(79, 19)
-        Me.Label29.TabIndex = 41
-        Me.Label29.Text = "Birthdate :"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.BackColor = System.Drawing.Color.White
-        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox6.Location = New System.Drawing.Point(85, 163)
-        Me.TextBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(168, 26)
-        Me.TextBox6.TabIndex = 40
-        '
-        'TextBox5
-        '
-        Me.TextBox5.BackColor = System.Drawing.Color.White
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Location = New System.Drawing.Point(85, 138)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(168, 26)
-        Me.TextBox5.TabIndex = 39
-        '
-        'TextBox4
-        '
-        Me.TextBox4.BackColor = System.Drawing.Color.White
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Location = New System.Drawing.Point(85, 114)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(168, 26)
-        Me.TextBox4.TabIndex = 38
-        '
-        'TextBox3
-        '
-        Me.TextBox3.BackColor = System.Drawing.Color.White
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Location = New System.Drawing.Point(85, 88)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(168, 26)
-        Me.TextBox3.TabIndex = 37
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BackColor = System.Drawing.Color.White
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Location = New System.Drawing.Point(85, 64)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(168, 26)
-        Me.TextBox2.TabIndex = 36
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.White
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(85, 38)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(168, 26)
-        Me.TextBox1.TabIndex = 35
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.GroupBox2.BackColor = System.Drawing.Color.White
-        Me.GroupBox2.Controls.Add(Me.Label31)
-        Me.GroupBox2.Controls.Add(Me.Label24)
-        Me.GroupBox2.Controls.Add(Me.Label15)
-        Me.GroupBox2.Controls.Add(Me.Label14)
-        Me.GroupBox2.Controls.Add(Me.Label13)
-        Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Controls.Add(Me.Label12)
-        Me.GroupBox2.Controls.Add(Me.Label11)
-        Me.GroupBox2.Controls.Add(Me.RadioButton2)
-        Me.GroupBox2.Controls.Add(Me.RadioButton1)
-        Me.GroupBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.ForeColor = System.Drawing.Color.ForestGreen
-        Me.GroupBox2.Location = New System.Drawing.Point(352, 208)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox2.Size = New System.Drawing.Size(347, 222)
-        Me.GroupBox2.TabIndex = 30
-        Me.GroupBox2.TabStop = False
-        '
-        'Label31
-        '
-        Me.Label31.BackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label31.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.ForeColor = System.Drawing.Color.DarkOliveGreen
-        Me.Label31.Location = New System.Drawing.Point(0, 0)
-        Me.Label31.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(347, 21)
-        Me.Label31.TabIndex = 38
-        Me.Label31.Text = "Others:"
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label24.Location = New System.Drawing.Point(14, 163)
-        Me.Label24.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(181, 15)
-        Me.Label24.TabIndex = 33
-        Me.Label24.Text = "Is the vaccine complete or not?"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label15.Location = New System.Drawing.Point(14, 191)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(129, 15)
-        Me.Label15.TabIndex = 32
-        Me.Label15.Text = "What kind of vaccine?"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label14.Location = New System.Drawing.Point(14, 115)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(117, 15)
-        Me.Label14.TabIndex = 32
-        Me.Label14.Text = "Is the pet vaccined?"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label13.Location = New System.Drawing.Point(14, 138)
-        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(192, 15)
-        Me.Label13.TabIndex = 31
-        Me.Label13.Text = "If yes, when was the last vaccine?"
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.GroupBox3.BackColor = System.Drawing.Color.White
-        Me.GroupBox3.Controls.Add(Me.Label32)
-        Me.GroupBox3.Controls.Add(Me.Label23)
-        Me.GroupBox3.Controls.Add(Me.Label20)
-        Me.GroupBox3.Controls.Add(Me.Label21)
-        Me.GroupBox3.Controls.Add(Me.Label22)
-        Me.GroupBox3.Controls.Add(Me.RadioButton8)
-        Me.GroupBox3.Controls.Add(Me.RadioButton9)
-        Me.GroupBox3.Controls.Add(Me.RadioButton10)
-        Me.GroupBox3.Controls.Add(Me.RadioButton11)
-        Me.GroupBox3.Controls.Add(Me.RadioButton12)
-        Me.GroupBox3.Controls.Add(Me.Label19)
-        Me.GroupBox3.Controls.Add(Me.Label18)
-        Me.GroupBox3.Controls.Add(Me.Label17)
-        Me.GroupBox3.Controls.Add(Me.RadioButton7)
-        Me.GroupBox3.Controls.Add(Me.RadioButton3)
-        Me.GroupBox3.Controls.Add(Me.RadioButton5)
-        Me.GroupBox3.Controls.Add(Me.RadioButton6)
-        Me.GroupBox3.Controls.Add(Me.Label16)
-        Me.GroupBox3.Controls.Add(Me.RadioButton4)
-        Me.GroupBox3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.ForeColor = System.Drawing.Color.ForestGreen
-        Me.GroupBox3.Location = New System.Drawing.Point(720, 208)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox3.Size = New System.Drawing.Size(278, 222)
-        Me.GroupBox3.TabIndex = 31
-        Me.GroupBox3.TabStop = False
-        '
-        'Label32
-        '
-        Me.Label32.BackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label32.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.ForeColor = System.Drawing.Color.DarkOliveGreen
-        Me.Label32.Location = New System.Drawing.Point(0, 1)
-        Me.Label32.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(278, 21)
-        Me.Label32.TabIndex = 39
-        Me.Label32.Text = "Personality:"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.ForeColor = System.Drawing.Color.Black
-        Me.Label23.Location = New System.Drawing.Point(6, 104)
-        Me.Label23.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(88, 21)
-        Me.Label23.TabIndex = 49
-        Me.Label23.Text = "Clinginess"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label20.Location = New System.Drawing.Point(106, 148)
-        Me.Label20.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(28, 15)
-        Me.Label20.TabIndex = 48
-        Me.Label20.Text = "Mid"
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label21.Location = New System.Drawing.Point(200, 148)
-        Me.Label21.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(79, 15)
-        Me.Label21.TabIndex = 47
-        Me.Label21.Text = "Independent"
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label22.Location = New System.Drawing.Point(6, 148)
-        Me.Label22.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(50, 15)
-        Me.Label22.TabIndex = 46
-        Me.Label22.Text = "Cuddler"
-        '
-        'RadioButton8
-        '
-        Me.RadioButton8.AutoSize = True
-        Me.RadioButton8.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton8.Location = New System.Drawing.Point(200, 130)
-        Me.RadioButton8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton8.Name = "RadioButton8"
-        Me.RadioButton8.Size = New System.Drawing.Size(32, 19)
-        Me.RadioButton8.TabIndex = 45
-        Me.RadioButton8.TabStop = True
-        Me.RadioButton8.Text = "5"
-        Me.RadioButton8.UseVisualStyleBackColor = True
-        '
-        'RadioButton9
-        '
-        Me.RadioButton9.AutoSize = True
-        Me.RadioButton9.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton9.Location = New System.Drawing.Point(6, 130)
-        Me.RadioButton9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton9.Name = "RadioButton9"
-        Me.RadioButton9.Size = New System.Drawing.Size(32, 19)
-        Me.RadioButton9.TabIndex = 41
-        Me.RadioButton9.TabStop = True
-        Me.RadioButton9.Text = "1"
-        Me.RadioButton9.UseVisualStyleBackColor = True
-        '
-        'RadioButton10
-        '
-        Me.RadioButton10.AutoSize = True
-        Me.RadioButton10.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton10.Location = New System.Drawing.Point(152, 130)
-        Me.RadioButton10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton10.Name = "RadioButton10"
-        Me.RadioButton10.Size = New System.Drawing.Size(32, 19)
-        Me.RadioButton10.TabIndex = 43
-        Me.RadioButton10.TabStop = True
-        Me.RadioButton10.Text = "4"
-        Me.RadioButton10.UseVisualStyleBackColor = True
-        '
-        'RadioButton11
-        '
-        Me.RadioButton11.AutoSize = True
-        Me.RadioButton11.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton11.Location = New System.Drawing.Point(104, 130)
-        Me.RadioButton11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton11.Name = "RadioButton11"
-        Me.RadioButton11.Size = New System.Drawing.Size(32, 19)
-        Me.RadioButton11.TabIndex = 44
-        Me.RadioButton11.TabStop = True
-        Me.RadioButton11.Text = "3"
-        Me.RadioButton11.UseVisualStyleBackColor = True
-        '
-        'RadioButton12
-        '
-        Me.RadioButton12.AutoSize = True
-        Me.RadioButton12.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton12.Location = New System.Drawing.Point(53, 130)
-        Me.RadioButton12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton12.Name = "RadioButton12"
-        Me.RadioButton12.Size = New System.Drawing.Size(32, 19)
-        Me.RadioButton12.TabIndex = 42
-        Me.RadioButton12.TabStop = True
-        Me.RadioButton12.Text = "2"
-        Me.RadioButton12.UseVisualStyleBackColor = True
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label19.Location = New System.Drawing.Point(106, 75)
-        Me.Label19.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(28, 15)
-        Me.Label19.TabIndex = 40
-        Me.Label19.Text = "Mid"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label18.Location = New System.Drawing.Point(200, 75)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(41, 15)
-        Me.Label18.TabIndex = 39
-        Me.Label18.Text = "Hyper"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label17.Location = New System.Drawing.Point(6, 75)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(30, 15)
-        Me.Label17.TabIndex = 38
-        Me.Label17.Text = "Chill"
-        '
-        'RadioButton7
-        '
-        Me.RadioButton7.AutoSize = True
-        Me.RadioButton7.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton7.Location = New System.Drawing.Point(200, 57)
-        Me.RadioButton7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(32, 19)
-        Me.RadioButton7.TabIndex = 37
-        Me.RadioButton7.TabStop = True
-        Me.RadioButton7.Text = "5"
-        Me.RadioButton7.UseVisualStyleBackColor = True
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton3.Location = New System.Drawing.Point(6, 57)
-        Me.RadioButton3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(32, 19)
-        Me.RadioButton3.TabIndex = 33
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "1"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'RadioButton5
-        '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton5.Location = New System.Drawing.Point(152, 57)
-        Me.RadioButton5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(32, 19)
-        Me.RadioButton5.TabIndex = 35
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "4"
-        Me.RadioButton5.UseVisualStyleBackColor = True
-        '
-        'RadioButton6
-        '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton6.Location = New System.Drawing.Point(104, 57)
-        Me.RadioButton6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(32, 19)
-        Me.RadioButton6.TabIndex = 36
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "3"
-        Me.RadioButton6.UseVisualStyleBackColor = True
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.Black
-        Me.Label16.Location = New System.Drawing.Point(4, 29)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(116, 21)
-        Me.Label16.TabIndex = 32
-        Me.Label16.Text = "Temperament"
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.RadioButton4.Location = New System.Drawing.Point(53, 57)
-        Me.RadioButton4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(32, 19)
-        Me.RadioButton4.TabIndex = 34
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "2"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.GroupBox4.BackColor = System.Drawing.Color.White
-        Me.GroupBox4.Controls.Add(Me.Label33)
-        Me.GroupBox4.Controls.Add(Me.TextBox7)
-        Me.GroupBox4.Controls.Add(Me.TextBox8)
-        Me.GroupBox4.Controls.Add(Me.TextBox9)
-        Me.GroupBox4.Controls.Add(Me.TextBox10)
-        Me.GroupBox4.Controls.Add(Me.Label28)
-        Me.GroupBox4.Controls.Add(Me.Label27)
-        Me.GroupBox4.Controls.Add(Me.Label26)
-        Me.GroupBox4.Controls.Add(Me.Label25)
-        Me.GroupBox4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.ForeColor = System.Drawing.Color.ForestGreen
-        Me.GroupBox4.Location = New System.Drawing.Point(156, 466)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox4.Size = New System.Drawing.Size(426, 156)
-        Me.GroupBox4.TabIndex = 34
-        Me.GroupBox4.TabStop = False
-        '
-        'Label33
-        '
-        Me.Label33.BackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label33.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.ForeColor = System.Drawing.Color.DarkOliveGreen
-        Me.Label33.Location = New System.Drawing.Point(0, 1)
-        Me.Label33.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(426, 21)
-        Me.Label33.TabIndex = 38
-        Me.Label33.Text = "Owner Information:"
-        '
-        'TextBox7
-        '
-        Me.TextBox7.BackColor = System.Drawing.Color.White
-        Me.TextBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox7.Location = New System.Drawing.Point(131, 111)
-        Me.TextBox7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(214, 23)
-        Me.TextBox7.TabIndex = 42
-        '
-        'TextBox8
-        '
-        Me.TextBox8.BackColor = System.Drawing.Color.White
-        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox8.Location = New System.Drawing.Point(131, 84)
-        Me.TextBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(214, 23)
-        Me.TextBox8.TabIndex = 41
-        '
-        'TextBox9
-        '
-        Me.TextBox9.BackColor = System.Drawing.Color.White
-        Me.TextBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox9.Location = New System.Drawing.Point(131, 60)
-        Me.TextBox9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(214, 23)
-        Me.TextBox9.TabIndex = 40
-        '
-        'TextBox10
-        '
-        Me.TextBox10.BackColor = System.Drawing.Color.White
-        Me.TextBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox10.Location = New System.Drawing.Point(131, 34)
-        Me.TextBox10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(214, 23)
-        Me.TextBox10.TabIndex = 39
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label28.Location = New System.Drawing.Point(21, 112)
-        Me.Label28.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(86, 15)
-        Me.Label28.TabIndex = 36
-        Me.Label28.Text = "Email Address:"
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label27.Location = New System.Drawing.Point(21, 86)
-        Me.Label27.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(85, 15)
-        Me.Label27.TabIndex = 35
-        Me.Label27.Text = "City/Province:"
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label26.Location = New System.Drawing.Point(21, 34)
-        Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(65, 15)
-        Me.Label26.TabIndex = 34
-        Me.Label26.Text = "Full Name:"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Label25.Location = New System.Drawing.Point(21, 60)
-        Me.Label25.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(103, 15)
-        Me.Label25.TabIndex = 33
-        Me.Label25.Text = "Contact number: "
-        '
-        'GroupBox5
-        '
-        Me.GroupBox5.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.GroupBox5.BackColor = System.Drawing.Color.White
-        Me.GroupBox5.Controls.Add(Me.Label34)
-        Me.GroupBox5.Controls.Add(Me.PictureBox2)
-        Me.GroupBox5.Controls.Add(Me.Button5)
-        Me.GroupBox5.Location = New System.Drawing.Point(606, 467)
-        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox5.Size = New System.Drawing.Size(276, 133)
-        Me.GroupBox5.TabIndex = 35
-        Me.GroupBox5.TabStop = False
-        '
-        'Label34
-        '
-        Me.Label34.BackColor = System.Drawing.Color.DarkSeaGreen
-        Me.Label34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label34.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.ForeColor = System.Drawing.Color.DarkOliveGreen
-        Me.Label34.Location = New System.Drawing.Point(0, 1)
-        Me.Label34.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(276, 21)
-        Me.Label34.TabIndex = 39
-        Me.Label34.Text = "Pet Image:"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.SystemColors.ButtonFace
-        Me.PictureBox2.Location = New System.Drawing.Point(61, 25)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(158, 77)
-        Me.PictureBox2.TabIndex = 36
-        Me.PictureBox2.TabStop = False
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.Button3.ForeColor = System.Drawing.Color.Black
-        Me.Button3.Location = New System.Drawing.Point(120, 16)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(107, 31)
-        Me.Button3.TabIndex = 36
-        Me.Button3.Text = "My Adoptions"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'PanelHeader
-        '
-        Me.PanelHeader.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PanelHeader.BackColor = System.Drawing.Color.ForestGreen
-        Me.PanelHeader.Location = New System.Drawing.Point(0, -6)
-        Me.PanelHeader.Name = "PanelHeader"
-        Me.PanelHeader.Size = New System.Drawing.Size(1092, 73)
-        Me.PanelHeader.TabIndex = 37
-        '
-        'PanelBottom
-        '
-        Me.PanelBottom.BackColor = System.Drawing.Color.ForestGreen
-        Me.PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelBottom.Location = New System.Drawing.Point(0, 782)
-        Me.PanelBottom.Name = "PanelBottom"
-        Me.PanelBottom.Size = New System.Drawing.Size(1092, 29)
-        Me.PanelBottom.TabIndex = 38
+        'btnRecords
+        '
+        Me.btnRecords.BackColor = System.Drawing.Color.White
+        Me.btnRecords.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.btnRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRecords.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnRecords.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnRecords.Location = New System.Drawing.Point(30, 15)
+        Me.btnRecords.Name = "btnRecords"
+        Me.btnRecords.Size = New System.Drawing.Size(130, 32)
+        Me.btnRecords.TabIndex = 0
+        Me.btnRecords.Text = "📁 My Adoptions"
+        Me.btnRecords.UseVisualStyleBackColor = False
+        '
+        'btnBack
+        '
+        Me.btnBack.BackColor = System.Drawing.Color.White
+        Me.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBack.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnBack.Location = New System.Drawing.Point(740, 15)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(155, 32)
+        Me.btnBack.TabIndex = 1
+        Me.btnBack.Text = "← Back to Homepage"
+        Me.btnBack.UseVisualStyleBackColor = False
+        '
+        'lblTitle
+        '
+        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 20.0!, System.Drawing.FontStyle.Bold)
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(110, Byte), Integer), CType(CType(44, Byte), Integer))
+        Me.lblTitle.Location = New System.Drawing.Point(30, 48)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(865, 38)
+        Me.lblTitle.TabIndex = 2
+        Me.lblTitle.Text = "Set Your Pet for Adoption"
+        Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblSubtitle
+        '
+        Me.lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 9.5!)
+        Me.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.lblSubtitle.Location = New System.Drawing.Point(30, 85)
+        Me.lblSubtitle.Name = "lblSubtitle"
+        Me.lblSubtitle.Size = New System.Drawing.Size(865, 20)
+        Me.lblSubtitle.TabIndex = 3
+        Me.lblSubtitle.Text = "Not financially capable enough to take care of your pet anymore? Leave it to us"
+        Me.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'grpPetInfo
+        '
+        Me.grpPetInfo.BackColor = System.Drawing.Color.White
+        Me.grpPetInfo.Controls.Add(Me.lblName)
+        Me.grpPetInfo.Controls.Add(Me.txtName)
+        Me.grpPetInfo.Controls.Add(Me.lblSpecies)
+        Me.grpPetInfo.Controls.Add(Me.cboSpecies)
+        Me.grpPetInfo.Controls.Add(Me.lblAge)
+        Me.grpPetInfo.Controls.Add(Me.txtAge)
+        Me.grpPetInfo.Controls.Add(Me.lblGender)
+        Me.grpPetInfo.Controls.Add(Me.rbMale)
+        Me.grpPetInfo.Controls.Add(Me.rbFemale)
+        Me.grpPetInfo.Controls.Add(Me.lblSize)
+        Me.grpPetInfo.Controls.Add(Me.cboSize)
+        Me.grpPetInfo.Controls.Add(Me.lblColor)
+        Me.grpPetInfo.Controls.Add(Me.txtColor)
+        Me.grpPetInfo.Controls.Add(Me.lblBreed)
+        Me.grpPetInfo.Controls.Add(Me.txtBreed)
+        Me.grpPetInfo.Font = New System.Drawing.Font("Segoe UI", 9.5!, System.Drawing.FontStyle.Bold)
+        Me.grpPetInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.grpPetInfo.Location = New System.Drawing.Point(30, 115)
+        Me.grpPetInfo.Name = "grpPetInfo"
+        Me.grpPetInfo.Size = New System.Drawing.Size(280, 275)
+        Me.grpPetInfo.TabIndex = 4
+        Me.grpPetInfo.TabStop = False
+        Me.grpPetInfo.Text = "Pet Information:"
+        '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblName.Location = New System.Drawing.Point(12, 30)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(43, 15)
+        Me.lblName.TabIndex = 0
+        Me.lblName.Text = "Name:"
+        '
+        'txtName
+        '
+        Me.txtName.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.txtName.Location = New System.Drawing.Point(80, 27)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(185, 23)
+        Me.txtName.TabIndex = 1
+        '
+        'lblSpecies
+        '
+        Me.lblSpecies.AutoSize = True
+        Me.lblSpecies.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblSpecies.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblSpecies.Location = New System.Drawing.Point(12, 65)
+        Me.lblSpecies.Name = "lblSpecies"
+        Me.lblSpecies.Size = New System.Drawing.Size(52, 15)
+        Me.lblSpecies.TabIndex = 2
+        Me.lblSpecies.Text = "Species:"
+        '
+        'cboSpecies
+        '
+        Me.cboSpecies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboSpecies.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.cboSpecies.FormattingEnabled = True
+        Me.cboSpecies.Items.AddRange(New Object() {"Dog", "Cat", "Small Pet", "Other"})
+        Me.cboSpecies.Location = New System.Drawing.Point(80, 62)
+        Me.cboSpecies.Name = "cboSpecies"
+        Me.cboSpecies.Size = New System.Drawing.Size(185, 21)
+        Me.cboSpecies.TabIndex = 3
+        '
+        'lblAge
+        '
+        Me.lblAge.AutoSize = True
+        Me.lblAge.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblAge.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblAge.Location = New System.Drawing.Point(12, 100)
+        Me.lblAge.Name = "lblAge"
+        Me.lblAge.Size = New System.Drawing.Size(32, 15)
+        Me.lblAge.TabIndex = 4
+        Me.lblAge.Text = "Age:"
+        '
+        'txtAge
+        '
+        Me.txtAge.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.txtAge.Location = New System.Drawing.Point(80, 97)
+        Me.txtAge.Name = "txtAge"
+        Me.txtAge.Size = New System.Drawing.Size(185, 23)
+        Me.txtAge.TabIndex = 5
+        '
+        'lblGender
+        '
+        Me.lblGender.AutoSize = True
+        Me.lblGender.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblGender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblGender.Location = New System.Drawing.Point(12, 135)
+        Me.lblGender.Name = "lblGender"
+        Me.lblGender.Size = New System.Drawing.Size(51, 15)
+        Me.lblGender.TabIndex = 6
+        Me.lblGender.Text = "Gender:"
+        '
+        'rbMale
+        '
+        Me.rbMale.AutoSize = True
+        Me.rbMale.Checked = True
+        Me.rbMale.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbMale.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbMale.Location = New System.Drawing.Point(80, 133)
+        Me.rbMale.Name = "rbMale"
+        Me.rbMale.Size = New System.Drawing.Size(51, 19)
+        Me.rbMale.TabIndex = 7
+        Me.rbMale.TabStop = True
+        Me.rbMale.Text = "Male"
+        Me.rbMale.UseVisualStyleBackColor = True
+        '
+        'rbFemale
+        '
+        Me.rbFemale.AutoSize = True
+        Me.rbFemale.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbFemale.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbFemale.Location = New System.Drawing.Point(150, 133)
+        Me.rbFemale.Name = "rbFemale"
+        Me.rbFemale.Size = New System.Drawing.Size(63, 19)
+        Me.rbFemale.TabIndex = 8
+        Me.rbFemale.Text = "Female"
+        Me.rbFemale.UseVisualStyleBackColor = True
+        '
+        'lblSize
+        '
+        Me.lblSize.AutoSize = True
+        Me.lblSize.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblSize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblSize.Location = New System.Drawing.Point(12, 170)
+        Me.lblSize.Name = "lblSize"
+        Me.lblSize.Size = New System.Drawing.Size(33, 15)
+        Me.lblSize.TabIndex = 9
+        Me.lblSize.Text = "Size:"
+        '
+        'cboSize
+        '
+        Me.cboSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboSize.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.cboSize.FormattingEnabled = True
+        Me.cboSize.Items.AddRange(New Object() {"Small", "Medium", "Large"})
+        Me.cboSize.Location = New System.Drawing.Point(80, 167)
+        Me.cboSize.Name = "cboSize"
+        Me.cboSize.Size = New System.Drawing.Size(185, 21)
+        Me.cboSize.TabIndex = 10
+        '
+        'lblColor
+        '
+        Me.lblColor.AutoSize = True
+        Me.lblColor.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblColor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblColor.Location = New System.Drawing.Point(12, 205)
+        Me.lblColor.Name = "lblColor"
+        Me.lblColor.Size = New System.Drawing.Size(39, 15)
+        Me.lblColor.TabIndex = 11
+        Me.lblColor.Text = "Color:"
+        '
+        'txtColor
+        '
+        Me.txtColor.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.txtColor.Location = New System.Drawing.Point(80, 202)
+        Me.txtColor.Name = "txtColor"
+        Me.txtColor.Size = New System.Drawing.Size(185, 23)
+        Me.txtColor.TabIndex = 12
+        '
+        'lblBreed
+        '
+        Me.lblBreed.AutoSize = True
+        Me.lblBreed.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblBreed.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblBreed.Location = New System.Drawing.Point(12, 240)
+        Me.lblBreed.Name = "lblBreed"
+        Me.lblBreed.Size = New System.Drawing.Size(43, 15)
+        Me.lblBreed.TabIndex = 13
+        Me.lblBreed.Text = "Breed:"
+        '
+        'txtBreed
+        '
+        Me.txtBreed.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.txtBreed.Location = New System.Drawing.Point(80, 237)
+        Me.txtBreed.Name = "txtBreed"
+        Me.txtBreed.Size = New System.Drawing.Size(185, 23)
+        Me.txtBreed.TabIndex = 14
+        '
+        'grpHealth
+        '
+        Me.grpHealth.BackColor = System.Drawing.Color.White
+        Me.grpHealth.Controls.Add(Me.lblLiveWith)
+        Me.grpHealth.Controls.Add(Me.rbPetsYes)
+        Me.grpHealth.Controls.Add(Me.rbPetsNo)
+        Me.grpHealth.Controls.Add(Me.lblVaccinated)
+        Me.grpHealth.Controls.Add(Me.rbVacYes)
+        Me.grpHealth.Controls.Add(Me.rbVacNo)
+        Me.grpHealth.Controls.Add(Me.lblVacStatus)
+        Me.grpHealth.Controls.Add(Me.cboVacStatus)
+        Me.grpHealth.Controls.Add(Me.lblVacKind)
+        Me.grpHealth.Controls.Add(Me.txtVacKind)
+        Me.grpHealth.Font = New System.Drawing.Font("Segoe UI", 9.5!, System.Drawing.FontStyle.Bold)
+        Me.grpHealth.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.grpHealth.Location = New System.Drawing.Point(325, 115)
+        Me.grpHealth.Name = "grpHealth"
+        Me.grpHealth.Size = New System.Drawing.Size(280, 275)
+        Me.grpHealth.TabIndex = 5
+        Me.grpHealth.TabStop = False
+        Me.grpHealth.Text = "Others / Health:"
+        '
+        'lblLiveWith
+        '
+        Me.lblLiveWith.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblLiveWith.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblLiveWith.Location = New System.Drawing.Point(12, 28)
+        Me.lblLiveWith.Name = "lblLiveWith"
+        Me.lblLiveWith.Size = New System.Drawing.Size(250, 18)
+        Me.lblLiveWith.TabIndex = 0
+        Me.lblLiveWith.Text = "Can live with other pets?"
+        '
+        'rbPetsYes
+        '
+        Me.rbPetsYes.AutoSize = True
+        Me.rbPetsYes.Checked = True
+        Me.rbPetsYes.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbPetsYes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbPetsYes.Location = New System.Drawing.Point(15, 48)
+        Me.rbPetsYes.Name = "rbPetsYes"
+        Me.rbPetsYes.Size = New System.Drawing.Size(42, 19)
+        Me.rbPetsYes.TabIndex = 1
+        Me.rbPetsYes.TabStop = True
+        Me.rbPetsYes.Text = "Yes"
+        Me.rbPetsYes.UseVisualStyleBackColor = True
+        '
+        'rbPetsNo
+        '
+        Me.rbPetsNo.AutoSize = True
+        Me.rbPetsNo.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbPetsNo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbPetsNo.Location = New System.Drawing.Point(80, 48)
+        Me.rbPetsNo.Name = "rbPetsNo"
+        Me.rbPetsNo.Size = New System.Drawing.Size(41, 19)
+        Me.rbPetsNo.TabIndex = 2
+        Me.rbPetsNo.Text = "No"
+        Me.rbPetsNo.UseVisualStyleBackColor = True
+        '
+        'lblVaccinated
+        '
+        Me.lblVaccinated.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblVaccinated.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblVaccinated.Location = New System.Drawing.Point(12, 85)
+        Me.lblVaccinated.Name = "lblVaccinated"
+        Me.lblVaccinated.Size = New System.Drawing.Size(250, 18)
+        Me.lblVaccinated.TabIndex = 3
+        Me.lblVaccinated.Text = "Is the pet vaccinated?"
+        '
+        'rbVacYes
+        '
+        Me.rbVacYes.AutoSize = True
+        Me.rbVacYes.Checked = True
+        Me.rbVacYes.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbVacYes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbVacYes.Location = New System.Drawing.Point(15, 105)
+        Me.rbVacYes.Name = "rbVacYes"
+        Me.rbVacYes.Size = New System.Drawing.Size(42, 19)
+        Me.rbVacYes.TabIndex = 4
+        Me.rbVacYes.TabStop = True
+        Me.rbVacYes.Text = "Yes"
+        Me.rbVacYes.UseVisualStyleBackColor = True
+        '
+        'rbVacNo
+        '
+        Me.rbVacNo.AutoSize = True
+        Me.rbVacNo.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbVacNo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbVacNo.Location = New System.Drawing.Point(80, 105)
+        Me.rbVacNo.Name = "rbVacNo"
+        Me.rbVacNo.Size = New System.Drawing.Size(41, 19)
+        Me.rbVacNo.TabIndex = 5
+        Me.rbVacNo.Text = "No"
+        Me.rbVacNo.UseVisualStyleBackColor = True
+        '
+        'lblVacStatus
+        '
+        Me.lblVacStatus.AutoSize = True
+        Me.lblVacStatus.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblVacStatus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblVacStatus.Location = New System.Drawing.Point(12, 145)
+        Me.lblVacStatus.Name = "lblVacStatus"
+        Me.lblVacStatus.Size = New System.Drawing.Size(109, 15)
+        Me.lblVacStatus.TabIndex = 6
+        Me.lblVacStatus.Text = "Vaccine Complete:"
+        '
+        'cboVacStatus
+        '
+        Me.cboVacStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboVacStatus.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.cboVacStatus.FormattingEnabled = True
+        Me.cboVacStatus.Items.AddRange(New Object() {"Complete", "Incomplete", "Unknown"})
+        Me.cboVacStatus.Location = New System.Drawing.Point(15, 165)
+        Me.cboVacStatus.Name = "cboVacStatus"
+        Me.cboVacStatus.Size = New System.Drawing.Size(250, 21)
+        Me.cboVacStatus.TabIndex = 7
+        '
+        'lblVacKind
+        '
+        Me.lblVacKind.AutoSize = True
+        Me.lblVacKind.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblVacKind.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblVacKind.Location = New System.Drawing.Point(12, 205)
+        Me.lblVacKind.Name = "lblVacKind"
+        Me.lblVacKind.Size = New System.Drawing.Size(126, 15)
+        Me.lblVacKind.TabIndex = 8
+        Me.lblVacKind.Text = "What kind of vaccine?"
+        '
+        'txtVacKind
+        '
+        Me.txtVacKind.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.txtVacKind.Location = New System.Drawing.Point(15, 225)
+        Me.txtVacKind.Name = "txtVacKind"
+        Me.txtVacKind.Size = New System.Drawing.Size(250, 23)
+        Me.txtVacKind.TabIndex = 9
+        '
+        'grpTraits
+        '
+        Me.grpTraits.BackColor = System.Drawing.Color.White
+        Me.grpTraits.Controls.Add(Me.lblTemperament)
+        Me.grpTraits.Controls.Add(Me.rbTemp1)
+        Me.grpTraits.Controls.Add(Me.rbTemp2)
+        Me.grpTraits.Controls.Add(Me.rbTemp3)
+        Me.grpTraits.Controls.Add(Me.rbTemp4)
+        Me.grpTraits.Controls.Add(Me.rbTemp5)
+        Me.grpTraits.Controls.Add(Me.lblTempHint)
+        Me.grpTraits.Controls.Add(Me.lblClinginess)
+        Me.grpTraits.Controls.Add(Me.rbCling1)
+        Me.grpTraits.Controls.Add(Me.rbCling2)
+        Me.grpTraits.Controls.Add(Me.rbCling3)
+        Me.grpTraits.Controls.Add(Me.rbCling4)
+        Me.grpTraits.Controls.Add(Me.rbCling5)
+        Me.grpTraits.Controls.Add(Me.lblClingHint)
+        Me.grpTraits.Font = New System.Drawing.Font("Segoe UI", 9.5!, System.Drawing.FontStyle.Bold)
+        Me.grpTraits.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.grpTraits.Location = New System.Drawing.Point(620, 115)
+        Me.grpTraits.Name = "grpTraits"
+        Me.grpTraits.Size = New System.Drawing.Size(280, 275)
+        Me.grpTraits.TabIndex = 6
+        Me.grpTraits.TabStop = False
+        Me.grpTraits.Text = "Personality Traits:"
+        '
+        'lblTemperament
+        '
+        Me.lblTemperament.AutoSize = True
+        Me.lblTemperament.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblTemperament.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblTemperament.Location = New System.Drawing.Point(12, 30)
+        Me.lblTemperament.Name = "lblTemperament"
+        Me.lblTemperament.Size = New System.Drawing.Size(124, 15)
+        Me.lblTemperament.TabIndex = 0
+        Me.lblTemperament.Text = "Temperament (1 to 5)"
+        '
+        'rbTemp1
+        '
+        Me.rbTemp1.AutoSize = True
+        Me.rbTemp1.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbTemp1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbTemp1.Location = New System.Drawing.Point(15, 55)
+        Me.rbTemp1.Name = "rbTemp1"
+        Me.rbTemp1.Size = New System.Drawing.Size(31, 19)
+        Me.rbTemp1.TabIndex = 1
+        Me.rbTemp1.Text = "1"
+        Me.rbTemp1.UseVisualStyleBackColor = True
+        '
+        'rbTemp2
+        '
+        Me.rbTemp2.AutoSize = True
+        Me.rbTemp2.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbTemp2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbTemp2.Location = New System.Drawing.Point(65, 55)
+        Me.rbTemp2.Name = "rbTemp2"
+        Me.rbTemp2.Size = New System.Drawing.Size(31, 19)
+        Me.rbTemp2.TabIndex = 2
+        Me.rbTemp2.Text = "2"
+        Me.rbTemp2.UseVisualStyleBackColor = True
+        '
+        'rbTemp3
+        '
+        Me.rbTemp3.AutoSize = True
+        Me.rbTemp3.Checked = True
+        Me.rbTemp3.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbTemp3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbTemp3.Location = New System.Drawing.Point(115, 55)
+        Me.rbTemp3.Name = "rbTemp3"
+        Me.rbTemp3.Size = New System.Drawing.Size(31, 19)
+        Me.rbTemp3.TabIndex = 3
+        Me.rbTemp3.TabStop = True
+        Me.rbTemp3.Text = "3"
+        Me.rbTemp3.UseVisualStyleBackColor = True
+        '
+        'rbTemp4
+        '
+        Me.rbTemp4.AutoSize = True
+        Me.rbTemp4.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbTemp4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbTemp4.Location = New System.Drawing.Point(165, 55)
+        Me.rbTemp4.Name = "rbTemp4"
+        Me.rbTemp4.Size = New System.Drawing.Size(31, 19)
+        Me.rbTemp4.TabIndex = 4
+        Me.rbTemp4.Text = "4"
+        Me.rbTemp4.UseVisualStyleBackColor = True
+        '
+        'rbTemp5
+        '
+        Me.rbTemp5.AutoSize = True
+        Me.rbTemp5.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbTemp5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbTemp5.Location = New System.Drawing.Point(215, 55)
+        Me.rbTemp5.Name = "rbTemp5"
+        Me.rbTemp5.Size = New System.Drawing.Size(31, 19)
+        Me.rbTemp5.TabIndex = 5
+        Me.rbTemp5.Text = "5"
+        Me.rbTemp5.UseVisualStyleBackColor = True
+        '
+        'lblTempHint
+        '
+        Me.lblTempHint.AutoSize = True
+        Me.lblTempHint.Font = New System.Drawing.Font("Segoe UI", 7.5!)
+        Me.lblTempHint.ForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.lblTempHint.Location = New System.Drawing.Point(12, 85)
+        Me.lblTempHint.Name = "lblTempHint"
+        Me.lblTempHint.Size = New System.Drawing.Size(225, 12)
+        Me.lblTempHint.TabIndex = 6
+        Me.lblTempHint.Text = "Chill                     Mid                     Hyper"
+        '
+        'lblClinginess
+        '
+        Me.lblClinginess.AutoSize = True
+        Me.lblClinginess.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblClinginess.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblClinginess.Location = New System.Drawing.Point(12, 140)
+        Me.lblClinginess.Name = "lblClinginess"
+        Me.lblClinginess.Size = New System.Drawing.Size(107, 15)
+        Me.lblClinginess.TabIndex = 7
+        Me.lblClinginess.Text = "Clinginess (1 to 5)"
+        '
+        'rbCling1
+        '
+        Me.rbCling1.AutoSize = True
+        Me.rbCling1.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbCling1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbCling1.Location = New System.Drawing.Point(15, 165)
+        Me.rbCling1.Name = "rbCling1"
+        Me.rbCling1.Size = New System.Drawing.Size(31, 19)
+        Me.rbCling1.TabIndex = 8
+        Me.rbCling1.Text = "1"
+        Me.rbCling1.UseVisualStyleBackColor = True
+        '
+        'rbCling2
+        '
+        Me.rbCling2.AutoSize = True
+        Me.rbCling2.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbCling2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbCling2.Location = New System.Drawing.Point(65, 165)
+        Me.rbCling2.Name = "rbCling2"
+        Me.rbCling2.Size = New System.Drawing.Size(31, 19)
+        Me.rbCling2.TabIndex = 9
+        Me.rbCling2.Text = "2"
+        Me.rbCling2.UseVisualStyleBackColor = True
+        '
+        'rbCling3
+        '
+        Me.rbCling3.AutoSize = True
+        Me.rbCling3.Checked = True
+        Me.rbCling3.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbCling3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbCling3.Location = New System.Drawing.Point(115, 165)
+        Me.rbCling3.Name = "rbCling3"
+        Me.rbCling3.Size = New System.Drawing.Size(31, 19)
+        Me.rbCling3.TabIndex = 10
+        Me.rbCling3.TabStop = True
+        Me.rbCling3.Text = "3"
+        Me.rbCling3.UseVisualStyleBackColor = True
+        '
+        'rbCling4
+        '
+        Me.rbCling4.AutoSize = True
+        Me.rbCling4.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbCling4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbCling4.Location = New System.Drawing.Point(165, 165)
+        Me.rbCling4.Name = "rbCling4"
+        Me.rbCling4.Size = New System.Drawing.Size(31, 19)
+        Me.rbCling4.TabIndex = 11
+        Me.rbCling4.Text = "4"
+        Me.rbCling4.UseVisualStyleBackColor = True
+        '
+        'rbCling5
+        '
+        Me.rbCling5.AutoSize = True
+        Me.rbCling5.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.rbCling5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.rbCling5.Location = New System.Drawing.Point(215, 165)
+        Me.rbCling5.Name = "rbCling5"
+        Me.rbCling5.Size = New System.Drawing.Size(31, 19)
+        Me.rbCling5.TabIndex = 12
+        Me.rbCling5.Text = "5"
+        Me.rbCling5.UseVisualStyleBackColor = True
+        '
+        'lblClingHint
+        '
+        Me.lblClingHint.AutoSize = True
+        Me.lblClingHint.Font = New System.Drawing.Font("Segoe UI", 7.5!)
+        Me.lblClingHint.ForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
+        Me.lblClingHint.Location = New System.Drawing.Point(12, 195)
+        Me.lblClingHint.Name = "lblClingHint"
+        Me.lblClingHint.Size = New System.Drawing.Size(227, 12)
+        Me.lblClingHint.TabIndex = 13
+        Me.lblClingHint.Text = "Cuddler                  Mid             Independent"
+        '
+        'grpOwner
+        '
+        Me.grpOwner.BackColor = System.Drawing.Color.White
+        Me.grpOwner.Controls.Add(Me.lblOwner)
+        Me.grpOwner.Controls.Add(Me.txtOwner)
+        Me.grpOwner.Controls.Add(Me.lblPhone)
+        Me.grpOwner.Controls.Add(Me.txtPhone)
+        Me.grpOwner.Controls.Add(Me.lblCity)
+        Me.grpOwner.Controls.Add(Me.txtCity)
+        Me.grpOwner.Controls.Add(Me.lblEmail)
+        Me.grpOwner.Controls.Add(Me.txtEmail)
+        Me.grpOwner.Font = New System.Drawing.Font("Segoe UI", 9.5!, System.Drawing.FontStyle.Bold)
+        Me.grpOwner.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.grpOwner.Location = New System.Drawing.Point(30, 405)
+        Me.grpOwner.Name = "grpOwner"
+        Me.grpOwner.Size = New System.Drawing.Size(575, 140)
+        Me.grpOwner.TabIndex = 7
+        Me.grpOwner.TabStop = False
+        Me.grpOwner.Text = "Owner Information:"
+        '
+        'lblOwner
+        '
+        Me.lblOwner.AutoSize = True
+        Me.lblOwner.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblOwner.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblOwner.Location = New System.Drawing.Point(12, 30)
+        Me.lblOwner.Name = "lblOwner"
+        Me.lblOwner.Size = New System.Drawing.Size(65, 15)
+        Me.lblOwner.TabIndex = 0
+        Me.lblOwner.Text = "Full Name:"
+        '
+        'txtOwner
+        '
+        Me.txtOwner.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.txtOwner.Location = New System.Drawing.Point(115, 27)
+        Me.txtOwner.Name = "txtOwner"
+        Me.txtOwner.Size = New System.Drawing.Size(435, 23)
+        Me.txtOwner.TabIndex = 1
+        '
+        'lblPhone
+        '
+        Me.lblPhone.AutoSize = True
+        Me.lblPhone.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblPhone.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblPhone.Location = New System.Drawing.Point(12, 65)
+        Me.lblPhone.Name = "lblPhone"
+        Me.lblPhone.Size = New System.Drawing.Size(99, 15)
+        Me.lblPhone.TabIndex = 2
+        Me.lblPhone.Text = "Contact number:"
+        '
+        'txtPhone
+        '
+        Me.txtPhone.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.txtPhone.Location = New System.Drawing.Point(115, 62)
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(435, 23)
+        Me.txtPhone.TabIndex = 3
+        '
+        'lblCity
+        '
+        Me.lblCity.AutoSize = True
+        Me.lblCity.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblCity.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblCity.Location = New System.Drawing.Point(12, 100)
+        Me.lblCity.Name = "lblCity"
+        Me.lblCity.Size = New System.Drawing.Size(86, 15)
+        Me.lblCity.TabIndex = 4
+        Me.lblCity.Text = "City/Province:"
+        '
+        'txtCity
+        '
+        Me.txtCity.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.txtCity.Location = New System.Drawing.Point(115, 97)
+        Me.txtCity.Name = "txtCity"
+        Me.txtCity.Size = New System.Drawing.Size(160, 23)
+        Me.txtCity.TabIndex = 5
+        '
+        'lblEmail
+        '
+        Me.lblEmail.AutoSize = True
+        Me.lblEmail.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblEmail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblEmail.Location = New System.Drawing.Point(290, 100)
+        Me.lblEmail.Name = "lblEmail"
+        Me.lblEmail.Size = New System.Drawing.Size(39, 15)
+        Me.lblEmail.TabIndex = 6
+        Me.lblEmail.Text = "Email:"
+        '
+        'txtEmail
+        '
+        Me.txtEmail.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.txtEmail.Location = New System.Drawing.Point(340, 97)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(210, 23)
+        Me.txtEmail.TabIndex = 7
+        '
+        'grpPhoto
+        '
+        Me.grpPhoto.BackColor = System.Drawing.Color.White
+        Me.grpPhoto.Controls.Add(Me.picPet)
+        Me.grpPhoto.Controls.Add(Me.btnUpload)
+        Me.grpPhoto.Font = New System.Drawing.Font("Segoe UI", 9.5!, System.Drawing.FontStyle.Bold)
+        Me.grpPhoto.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.grpPhoto.Location = New System.Drawing.Point(620, 405)
+        Me.grpPhoto.Name = "grpPhoto"
+        Me.grpPhoto.Size = New System.Drawing.Size(280, 140)
+        Me.grpPhoto.TabIndex = 8
+        Me.grpPhoto.TabStop = False
+        Me.grpPhoto.Text = "Pet Image:"
+        '
+        'picPet
+        '
+        Me.picPet.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.picPet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.picPet.Location = New System.Drawing.Point(15, 25)
+        Me.picPet.Name = "picPet"
+        Me.picPet.Size = New System.Drawing.Size(250, 68)
+        Me.picPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picPet.TabIndex = 0
+        Me.picPet.TabStop = False
+        '
+        'btnUpload
+        '
+        Me.btnUpload.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.btnUpload.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpload.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.btnUpload.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnUpload.Location = New System.Drawing.Point(65, 100)
+        Me.btnUpload.Name = "btnUpload"
+        Me.btnUpload.Size = New System.Drawing.Size(150, 28)
+        Me.btnUpload.TabIndex = 1
+        Me.btnUpload.Text = "📁 Upload Image"
+        Me.btnUpload.UseVisualStyleBackColor = False
+        '
+        'btnSave
+        '
+        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnSave.FlatAppearance.BorderSize = 0
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSave.Font = New System.Drawing.Font("Segoe UI", 11.0!, System.Drawing.FontStyle.Bold)
+        Me.btnSave.ForeColor = System.Drawing.Color.White
+        Me.btnSave.Location = New System.Drawing.Point(340, 560)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(265, 42)
+        Me.btnSave.TabIndex = 9
+        Me.btnSave.Text = "🐾 Submit Pet for Adoption"
+        Me.btnSave.UseVisualStyleBackColor = False
         '
         'Form4
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.AutoScroll = True
-        Me.BackColor = System.Drawing.Color.Beige
-        Me.ClientSize = New System.Drawing.Size(1092, 811)
-        Me.Controls.Add(Me.PanelBottom)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.GroupBox5)
-        Me.Controls.Add(Me.GroupBox4)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.PanelHeader)
-        Me.ForeColor = System.Drawing.Color.DarkSlateGray
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.MinimumSize = New System.Drawing.Size(800, 600)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(930, 620)
+        Me.Controls.Add(Me.btnSave)
+        Me.Controls.Add(Me.grpPhoto)
+        Me.Controls.Add(Me.grpOwner)
+        Me.Controls.Add(Me.grpTraits)
+        Me.Controls.Add(Me.grpHealth)
+        Me.Controls.Add(Me.grpPetInfo)
+        Me.Controls.Add(Me.lblSubtitle)
+        Me.Controls.Add(Me.lblTitle)
+        Me.Controls.Add(Me.btnBack)
+        Me.Controls.Add(Me.btnRecords)
+        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Form4"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Set up adoption Page"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
-        Me.GroupBox5.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "PawHaven - Set Pet for Adoption"
+        Me.grpPetInfo.ResumeLayout(False)
+        Me.grpPetInfo.PerformLayout()
+        Me.grpHealth.ResumeLayout(False)
+        Me.grpHealth.PerformLayout()
+        Me.grpTraits.ResumeLayout(False)
+        Me.grpTraits.PerformLayout()
+        Me.grpOwner.ResumeLayout(False)
+        Me.grpOwner.PerformLayout()
+        Me.grpPhoto.ResumeLayout(False)
+        CType(Me.picPet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents Label12 As Label
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents Label16 As Label
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents Label23 As Label
-    Friend WithEvents Label20 As Label
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label22 As Label
-    Friend WithEvents RadioButton8 As RadioButton
-    Friend WithEvents RadioButton9 As RadioButton
-    Friend WithEvents RadioButton10 As RadioButton
-    Friend WithEvents RadioButton11 As RadioButton
-    Friend WithEvents RadioButton12 As RadioButton
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Label17 As Label
-    Friend WithEvents RadioButton7 As RadioButton
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label24 As Label
-    Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents Label28 As Label
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label26 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents GroupBox5 As GroupBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents Label29 As Label
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Label30 As Label
-    Friend WithEvents Label31 As Label
-    Friend WithEvents Label32 As Label
-    Friend WithEvents Label33 As Label
-    Friend WithEvents Label34 As Label
-    Friend WithEvents PanelHeader As Panel
-    Friend WithEvents PanelBottom As Panel
 End Class
+

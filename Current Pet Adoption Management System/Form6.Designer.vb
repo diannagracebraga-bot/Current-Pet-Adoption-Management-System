@@ -1,9 +1,7 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form6
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -14,206 +12,307 @@ Partial Class Form6
         End Try
     End Sub
 
-    'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    Friend WithEvents pnlHeader As System.Windows.Forms.Panel
+    Friend WithEvents lblBrand As System.Windows.Forms.Label
+    Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents lblTitle As System.Windows.Forms.Label
+    Friend WithEvents lblSubtitle As System.Windows.Forms.Label
+    Friend WithEvents grpKpi As System.Windows.Forms.GroupBox
+    Friend WithEvents lblTotal As System.Windows.Forms.Label
+    Friend WithEvents lblPending As System.Windows.Forms.Label
+    Friend WithEvents lblApproved As System.Windows.Forms.Label
+    Friend WithEvents lblRejected As System.Windows.Forms.Label
+    Friend WithEvents pnlFilter As System.Windows.Forms.Panel
+    Friend WithEvents lblStatus As System.Windows.Forms.Label
+    Friend WithEvents cboStatus As System.Windows.Forms.ComboBox
+    Friend WithEvents btnRefresh As System.Windows.Forms.Button
+    Friend WithEvents btnApprove As System.Windows.Forms.Button
+    Friend WithEvents btnReject As System.Windows.Forms.Button
+    Friend WithEvents btnDelete As System.Windows.Forms.Button
+    Friend WithEvents btnView As System.Windows.Forms.Button
+
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel3.SuspendLayout()
+        Me.pnlHeader = New System.Windows.Forms.Panel()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.lblBrand = New System.Windows.Forms.Label()
+        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.lblSubtitle = New System.Windows.Forms.Label()
+        Me.grpKpi = New System.Windows.Forms.GroupBox()
+        Me.lblRejected = New System.Windows.Forms.Label()
+        Me.lblApproved = New System.Windows.Forms.Label()
+        Me.lblPending = New System.Windows.Forms.Label()
+        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.pnlFilter = New System.Windows.Forms.Panel()
+        Me.btnRefresh = New System.Windows.Forms.Button()
+        Me.cboStatus = New System.Windows.Forms.ComboBox()
+        Me.lblStatus = New System.Windows.Forms.Label()
+        Me.btnApprove = New System.Windows.Forms.Button()
+        Me.btnReject = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
+        Me.btnView = New System.Windows.Forms.Button()
+        Me.pnlHeader.SuspendLayout()
+        Me.grpKpi.SuspendLayout()
+        Me.pnlFilter.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button4
+        'pnlHeader
         '
-        Me.Button4.Location = New System.Drawing.Point(1748, 21)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(91, 38)
-        Me.Button4.TabIndex = 15
-        Me.Button4.Text = "Logout"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.pnlHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.pnlHeader.Controls.Add(Me.btnExit)
+        Me.pnlHeader.Controls.Add(Me.lblBrand)
+        Me.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlHeader.Location = New System.Drawing.Point(0, 0)
+        Me.pnlHeader.Name = "pnlHeader"
+        Me.pnlHeader.Size = New System.Drawing.Size(1004, 60)
+        Me.pnlHeader.TabIndex = 0
         '
-        'Button3
+        'btnExit
         '
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI Black", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(319, 20)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(119, 38)
-        Me.Button3.TabIndex = 14
-        Me.Button3.Text = "Set Adoption"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnExit.BackColor = System.Drawing.Color.White
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnExit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.btnExit.Location = New System.Drawing.Point(850, 14)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(140, 32)
+        Me.btnExit.TabIndex = 1
+        Me.btnExit.Text = "← Exit Admin Mode"
+        Me.btnExit.UseVisualStyleBackColor = False
         '
-        'Button2
+        'lblBrand
         '
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI Black", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(467, 20)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(125, 38)
-        Me.Button2.TabIndex = 13
-        Me.Button2.Text = "About"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.lblBrand.AutoSize = True
+        Me.lblBrand.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
+        Me.lblBrand.ForeColor = System.Drawing.Color.White
+        Me.lblBrand.Location = New System.Drawing.Point(20, 18)
+        Me.lblBrand.Name = "lblBrand"
+        Me.lblBrand.Size = New System.Drawing.Size(264, 21)
+        Me.lblBrand.TabIndex = 0
+        Me.lblBrand.Text = "🛡️ PAWHAVEN ADMIN CONSOLE"
         '
-        'Button1
+        'lblTitle
         '
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Black", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(165, 20)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(125, 38)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Dashboard"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(27, Byte), Integer))
+        Me.lblTitle.Location = New System.Drawing.Point(20, 75)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(275, 32)
+        Me.lblTitle.TabIndex = 1
+        Me.lblTitle.Text = "Pet Listing Moderation"
         '
-        'PictureBox2
+        'lblSubtitle
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(29, 20)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(61, 49)
-        Me.PictureBox2.TabIndex = 11
-        Me.PictureBox2.TabStop = False
+        Me.lblSubtitle.AutoSize = True
+        Me.lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.lblSubtitle.Location = New System.Drawing.Point(22, 110)
+        Me.lblSubtitle.Name = "lblSubtitle"
+        Me.lblSubtitle.Size = New System.Drawing.Size(469, 17)
+        Me.lblSubtitle.TabIndex = 2
+        Me.lblSubtitle.Text = "Approve verified pets into the public catalog, reject duplicates, or delete posts" &
+    "."
         '
-        'PictureBox1
+        'grpKpi
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.ForestGreen
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1880, 85)
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
+        Me.grpKpi.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.grpKpi.BackColor = System.Drawing.Color.White
+        Me.grpKpi.Controls.Add(Me.lblRejected)
+        Me.grpKpi.Controls.Add(Me.lblApproved)
+        Me.grpKpi.Controls.Add(Me.lblPending)
+        Me.grpKpi.Controls.Add(Me.lblTotal)
+        Me.grpKpi.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.grpKpi.ForeColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.grpKpi.Location = New System.Drawing.Point(24, 138)
+        Me.grpKpi.Name = "grpKpi"
+        Me.grpKpi.Size = New System.Drawing.Size(955, 65)
+        Me.grpKpi.TabIndex = 3
+        Me.grpKpi.TabStop = False
+        Me.grpKpi.Text = "Moderation Overview"
         '
-        'Label1
+        'lblRejected
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Black", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(711, 98)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(357, 81)
-        Me.Label1.TabIndex = 16
-        Me.Label1.Text = "Dashboard"
+        Me.lblRejected.AutoSize = True
+        Me.lblRejected.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblRejected.ForeColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.lblRejected.Location = New System.Drawing.Point(580, 28)
+        Me.lblRejected.Name = "lblRejected"
+        Me.lblRejected.Size = New System.Drawing.Size(75, 17)
+        Me.lblRejected.TabIndex = 3
+        Me.lblRejected.Text = "Rejected: 0"
         '
-        'Label2
+        'lblApproved
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(77, 191)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(238, 31)
-        Me.Label2.TabIndex = 17
-        Me.Label2.Text = "TOTAL PET ADOPTED"
+        Me.lblApproved.AutoSize = True
+        Me.lblApproved.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblApproved.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(52, Byte), Integer))
+        Me.lblApproved.Location = New System.Drawing.Point(380, 28)
+        Me.lblApproved.Name = "lblApproved"
+        Me.lblApproved.Size = New System.Drawing.Size(83, 17)
+        Me.lblApproved.TabIndex = 2
+        Me.lblApproved.Text = "Approved: 0"
         '
-        'Label3
+        'lblPending
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(14, 191)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(354, 31)
-        Me.Label3.TabIndex = 17
-        Me.Label3.Text = "PET AVAILABLE FOR ADOPTION"
+        Me.lblPending.AutoSize = True
+        Me.lblPending.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblPending.ForeColor = System.Drawing.Color.FromArgb(CType(CType(180, Byte), Integer), CType(CType(83, Byte), Integer), CType(CType(9, Byte), Integer))
+        Me.lblPending.Location = New System.Drawing.Point(180, 28)
+        Me.lblPending.Name = "lblPending"
+        Me.lblPending.Size = New System.Drawing.Size(121, 17)
+        Me.lblPending.TabIndex = 1
+        Me.lblPending.Text = "Pending Review: 0"
         '
-        'Label4
+        'lblTotal
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(68, 191)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(240, 31)
-        Me.Label4.TabIndex = 17
-        Me.Label4.Text = "PENDING APPROVAL"
+        Me.lblTotal.AutoSize = True
+        Me.lblTotal.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblTotal.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(27, Byte), Integer))
+        Me.lblTotal.Location = New System.Drawing.Point(20, 28)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(106, 17)
+        Me.lblTotal.TabIndex = 0
+        Me.lblTotal.Text = "Total Listings: 0"
         '
-        'Panel2
+        'pnlFilter
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FloralWhite
-        Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Location = New System.Drawing.Point(1241, 210)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(386, 249)
-        Me.Panel2.TabIndex = 19
+        Me.pnlFilter.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlFilter.BackColor = System.Drawing.Color.White
+        Me.pnlFilter.Controls.Add(Me.btnRefresh)
+        Me.pnlFilter.Controls.Add(Me.cboStatus)
+        Me.pnlFilter.Controls.Add(Me.lblStatus)
+        Me.pnlFilter.Location = New System.Drawing.Point(24, 215)
+        Me.pnlFilter.Name = "pnlFilter"
+        Me.pnlFilter.Size = New System.Drawing.Size(955, 42)
+        Me.pnlFilter.TabIndex = 4
         '
-        'Panel1
+        'btnRefresh
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FloralWhite
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Location = New System.Drawing.Point(260, 210)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(386, 249)
-        Me.Panel1.TabIndex = 20
+        Me.btnRefresh.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRefresh.BackColor = System.Drawing.Color.White
+        Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnRefresh.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnRefresh.Location = New System.Drawing.Point(835, 7)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(105, 28)
+        Me.btnRefresh.TabIndex = 2
+        Me.btnRefresh.Text = "🔄 Refresh"
+        Me.btnRefresh.UseVisualStyleBackColor = False
         '
-        'Panel3
+        'cboStatus
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FloralWhite
-        Me.Panel3.Controls.Add(Me.Label3)
-        Me.Panel3.Location = New System.Drawing.Point(747, 210)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(386, 249)
-        Me.Panel3.TabIndex = 21
+        Me.cboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboStatus.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.cboStatus.FormattingEnabled = True
+        Me.cboStatus.Items.AddRange(New Object() {"All Listings", "Pending Review", "Approved", "Rejected"})
+        Me.cboStatus.Location = New System.Drawing.Point(125, 9)
+        Me.cboStatus.Name = "cboStatus"
+        Me.cboStatus.Size = New System.Drawing.Size(160, 23)
+        Me.cboStatus.TabIndex = 1
+        '
+        'lblStatus
+        '
+        Me.lblStatus.AutoSize = True
+        Me.lblStatus.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblStatus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.lblStatus.Location = New System.Drawing.Point(15, 13)
+        Me.lblStatus.Name = "lblStatus"
+        Me.lblStatus.Size = New System.Drawing.Size(93, 15)
+        Me.lblStatus.TabIndex = 0
+        Me.lblStatus.Text = "Filter by Status:"
+        '
+        'btnApprove
+        '
+        Me.btnApprove.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnApprove.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnApprove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnApprove.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnApprove.ForeColor = System.Drawing.Color.White
+        Me.btnApprove.Location = New System.Drawing.Point(24, 575)
+        Me.btnApprove.Name = "btnApprove"
+        Me.btnApprove.Size = New System.Drawing.Size(150, 36)
+        Me.btnApprove.TabIndex = 6
+        Me.btnApprove.Text = "✅ Approve Pet"
+        Me.btnApprove.UseVisualStyleBackColor = False
+        '
+        'btnReject
+        '
+        Me.btnReject.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnReject.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(119, Byte), Integer), CType(CType(6, Byte), Integer))
+        Me.btnReject.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReject.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnReject.ForeColor = System.Drawing.Color.White
+        Me.btnReject.Location = New System.Drawing.Point(185, 575)
+        Me.btnReject.Name = "btnReject"
+        Me.btnReject.Size = New System.Drawing.Size(140, 36)
+        Me.btnReject.TabIndex = 7
+        Me.btnReject.Text = "❌ Reject Pet"
+        Me.btnReject.UseVisualStyleBackColor = False
+        '
+        'btnDelete
+        '
+        Me.btnDelete.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnDelete.BackColor = System.Drawing.Color.FromArgb(CType(CType(139, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(30, Byte), Integer))
+        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelete.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnDelete.ForeColor = System.Drawing.Color.White
+        Me.btnDelete.Location = New System.Drawing.Point(335, 575)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(140, 36)
+        Me.btnDelete.TabIndex = 8
+        Me.btnDelete.Text = "🗑 Delete Record"
+        Me.btnDelete.UseVisualStyleBackColor = False
+        '
+        'btnView
+        '
+        Me.btnView.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnView.BackColor = System.Drawing.Color.White
+        Me.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnView.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.btnView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(27, Byte), Integer))
+        Me.btnView.Location = New System.Drawing.Point(825, 575)
+        Me.btnView.Name = "btnView"
+        Me.btnView.Size = New System.Drawing.Size(154, 36)
+        Me.btnView.TabIndex = 9
+        Me.btnView.Text = "🔍 View Full Info"
+        Me.btnView.UseVisualStyleBackColor = False
         '
         'Form6
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Beige
-        Me.ClientSize = New System.Drawing.Size(1874, 913)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1004, 630)
+        Me.Controls.Add(Me.btnView)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.btnReject)
+        Me.Controls.Add(Me.btnApprove)
+        Me.Controls.Add(Me.pnlFilter)
+        Me.Controls.Add(Me.grpKpi)
+        Me.Controls.Add(Me.lblSubtitle)
+        Me.Controls.Add(Me.lblTitle)
+        Me.Controls.Add(Me.pnlHeader)
+        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.MinimumSize = New System.Drawing.Size(850, 600)
         Me.Name = "Form6"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Admin interface"
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
+        Me.Text = "PawHaven - Admin Moderation Console"
+        Me.pnlHeader.ResumeLayout(False)
+        Me.pnlHeader.PerformLayout()
+        Me.grpKpi.ResumeLayout(False)
+        Me.grpKpi.PerformLayout()
+        Me.pnlFilter.ResumeLayout(False)
+        Me.pnlFilter.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel3 As Panel
+
 End Class
+
