@@ -132,4 +132,5 @@ Public Class Form3 'SIGNUP page
         FormStateManager.LoadSavedState()
         Me.WindowState = FormStateManager.LastState
     End Sub
+
 End Class
