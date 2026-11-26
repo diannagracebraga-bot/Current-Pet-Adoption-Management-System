@@ -78,7 +78,7 @@ Partial Class Form3
         Me.pnlRegister.Controls.Add(Me.chkShowPass)
         Me.pnlRegister.Controls.Add(Me.btnRegister)
         Me.pnlRegister.Controls.Add(Me.lnkLogin)
-        Me.pnlRegister.Location = New System.Drawing.Point(139, 50)
+        Me.pnlRegister.Location = New System.Drawing.Point(180, 65)
         Me.pnlRegister.Name = "pnlRegister"
         Me.pnlRegister.Size = New System.Drawing.Size(360, 460)
         Me.pnlRegister.TabIndex = 1

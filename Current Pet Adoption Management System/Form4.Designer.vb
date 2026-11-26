@@ -35,10 +35,10 @@ Partial Class Form4
     Friend WithEvents lblBreed As System.Windows.Forms.Label
     Friend WithEvents txtBreed As System.Windows.Forms.TextBox
     Friend WithEvents grpHealth As System.Windows.Forms.GroupBox
-    Friend WithEvents lblLiveWith As System.Windows.Forms.Label
+    Friend WithEvents grpLiveWith As System.Windows.Forms.GroupBox
     Friend WithEvents rbPetsYes As System.Windows.Forms.RadioButton
     Friend WithEvents rbPetsNo As System.Windows.Forms.RadioButton
-    Friend WithEvents lblVaccinated As System.Windows.Forms.Label
+    Friend WithEvents grpVaccinated As System.Windows.Forms.GroupBox
     Friend WithEvents rbVacYes As System.Windows.Forms.RadioButton
     Friend WithEvents rbVacNo As System.Windows.Forms.RadioButton
     Friend WithEvents lblVacStatus As System.Windows.Forms.Label
@@ -46,14 +46,14 @@ Partial Class Form4
     Friend WithEvents lblVacKind As System.Windows.Forms.Label
     Friend WithEvents txtVacKind As System.Windows.Forms.TextBox
     Friend WithEvents grpTraits As System.Windows.Forms.GroupBox
-    Friend WithEvents lblTemperament As System.Windows.Forms.Label
+    Friend WithEvents grpTemperament As System.Windows.Forms.GroupBox
     Friend WithEvents rbTemp1 As System.Windows.Forms.RadioButton
     Friend WithEvents rbTemp2 As System.Windows.Forms.RadioButton
     Friend WithEvents rbTemp3 As System.Windows.Forms.RadioButton
     Friend WithEvents rbTemp4 As System.Windows.Forms.RadioButton
     Friend WithEvents rbTemp5 As System.Windows.Forms.RadioButton
     Friend WithEvents lblTempHint As System.Windows.Forms.Label
-    Friend WithEvents lblClinginess As System.Windows.Forms.Label
+    Friend WithEvents grpClinginess As System.Windows.Forms.GroupBox
     Friend WithEvents rbCling1 As System.Windows.Forms.RadioButton
     Friend WithEvents rbCling2 As System.Windows.Forms.RadioButton
     Friend WithEvents rbCling3 As System.Windows.Forms.RadioButton
@@ -97,10 +97,10 @@ Partial Class Form4
         Me.lblBreed = New System.Windows.Forms.Label()
         Me.txtBreed = New System.Windows.Forms.TextBox()
         Me.grpHealth = New System.Windows.Forms.GroupBox()
-        Me.lblLiveWith = New System.Windows.Forms.Label()
+        Me.grpLiveWith = New System.Windows.Forms.GroupBox()
         Me.rbPetsYes = New System.Windows.Forms.RadioButton()
         Me.rbPetsNo = New System.Windows.Forms.RadioButton()
-        Me.lblVaccinated = New System.Windows.Forms.Label()
+        Me.grpVaccinated = New System.Windows.Forms.GroupBox()
         Me.rbVacYes = New System.Windows.Forms.RadioButton()
         Me.rbVacNo = New System.Windows.Forms.RadioButton()
         Me.lblVacStatus = New System.Windows.Forms.Label()
@@ -108,14 +108,14 @@ Partial Class Form4
         Me.lblVacKind = New System.Windows.Forms.Label()
         Me.txtVacKind = New System.Windows.Forms.TextBox()
         Me.grpTraits = New System.Windows.Forms.GroupBox()
-        Me.lblTemperament = New System.Windows.Forms.Label()
+        Me.grpTemperament = New System.Windows.Forms.GroupBox()
         Me.rbTemp1 = New System.Windows.Forms.RadioButton()
         Me.rbTemp2 = New System.Windows.Forms.RadioButton()
         Me.rbTemp3 = New System.Windows.Forms.RadioButton()
         Me.rbTemp4 = New System.Windows.Forms.RadioButton()
         Me.rbTemp5 = New System.Windows.Forms.RadioButton()
         Me.lblTempHint = New System.Windows.Forms.Label()
-        Me.lblClinginess = New System.Windows.Forms.Label()
+        Me.grpClinginess = New System.Windows.Forms.GroupBox()
         Me.rbCling1 = New System.Windows.Forms.RadioButton()
         Me.rbCling2 = New System.Windows.Forms.RadioButton()
         Me.rbCling3 = New System.Windows.Forms.RadioButton()
@@ -137,7 +137,11 @@ Partial Class Form4
         Me.btnSave = New System.Windows.Forms.Button()
         Me.grpPetInfo.SuspendLayout()
         Me.grpHealth.SuspendLayout()
+        Me.grpLiveWith.SuspendLayout()
+        Me.grpVaccinated.SuspendLayout()
         Me.grpTraits.SuspendLayout()
+        Me.grpTemperament.SuspendLayout()
+        Me.grpClinginess.SuspendLayout()
         Me.grpOwner.SuspendLayout()
         Me.grpPhoto.SuspendLayout()
         CType(Me.picPet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -380,12 +384,8 @@ Partial Class Form4
         'grpHealth
         '
         Me.grpHealth.BackColor = System.Drawing.Color.White
-        Me.grpHealth.Controls.Add(Me.lblLiveWith)
-        Me.grpHealth.Controls.Add(Me.rbPetsYes)
-        Me.grpHealth.Controls.Add(Me.rbPetsNo)
-        Me.grpHealth.Controls.Add(Me.lblVaccinated)
-        Me.grpHealth.Controls.Add(Me.rbVacYes)
-        Me.grpHealth.Controls.Add(Me.rbVacNo)
+        Me.grpHealth.Controls.Add(Me.grpLiveWith)
+        Me.grpHealth.Controls.Add(Me.grpVaccinated)
         Me.grpHealth.Controls.Add(Me.lblVacStatus)
         Me.grpHealth.Controls.Add(Me.cboVacStatus)
         Me.grpHealth.Controls.Add(Me.lblVacKind)
@@ -399,15 +399,19 @@ Partial Class Form4
         Me.grpHealth.TabStop = False
         Me.grpHealth.Text = "Others / Health:"
         '
-        'lblLiveWith
+        'grpLiveWith
         '
-        Me.lblLiveWith.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
-        Me.lblLiveWith.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.lblLiveWith.Location = New System.Drawing.Point(12, 28)
-        Me.lblLiveWith.Name = "lblLiveWith"
-        Me.lblLiveWith.Size = New System.Drawing.Size(250, 18)
-        Me.lblLiveWith.TabIndex = 0
-        Me.lblLiveWith.Text = "Can live with other pets?"
+        Me.grpLiveWith.BackColor = System.Drawing.Color.White
+        Me.grpLiveWith.Controls.Add(Me.rbPetsYes)
+        Me.grpLiveWith.Controls.Add(Me.rbPetsNo)
+        Me.grpLiveWith.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.grpLiveWith.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.grpLiveWith.Location = New System.Drawing.Point(12, 24)
+        Me.grpLiveWith.Name = "grpLiveWith"
+        Me.grpLiveWith.Size = New System.Drawing.Size(256, 54)
+        Me.grpLiveWith.TabIndex = 0
+        Me.grpLiveWith.TabStop = False
+        Me.grpLiveWith.Text = "Can live with other pets?"
         '
         'rbPetsYes
         '
@@ -415,10 +419,10 @@ Partial Class Form4
         Me.rbPetsYes.Checked = True
         Me.rbPetsYes.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbPetsYes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbPetsYes.Location = New System.Drawing.Point(15, 48)
+        Me.rbPetsYes.Location = New System.Drawing.Point(14, 24)
         Me.rbPetsYes.Name = "rbPetsYes"
         Me.rbPetsYes.Size = New System.Drawing.Size(42, 19)
-        Me.rbPetsYes.TabIndex = 1
+        Me.rbPetsYes.TabIndex = 0
         Me.rbPetsYes.TabStop = True
         Me.rbPetsYes.Text = "Yes"
         Me.rbPetsYes.UseVisualStyleBackColor = True
@@ -428,22 +432,26 @@ Partial Class Form4
         Me.rbPetsNo.AutoSize = True
         Me.rbPetsNo.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbPetsNo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbPetsNo.Location = New System.Drawing.Point(80, 48)
+        Me.rbPetsNo.Location = New System.Drawing.Point(84, 24)
         Me.rbPetsNo.Name = "rbPetsNo"
         Me.rbPetsNo.Size = New System.Drawing.Size(41, 19)
-        Me.rbPetsNo.TabIndex = 2
+        Me.rbPetsNo.TabIndex = 1
         Me.rbPetsNo.Text = "No"
         Me.rbPetsNo.UseVisualStyleBackColor = True
         '
-        'lblVaccinated
+        'grpVaccinated
         '
-        Me.lblVaccinated.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
-        Me.lblVaccinated.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.lblVaccinated.Location = New System.Drawing.Point(12, 85)
-        Me.lblVaccinated.Name = "lblVaccinated"
-        Me.lblVaccinated.Size = New System.Drawing.Size(250, 18)
-        Me.lblVaccinated.TabIndex = 3
-        Me.lblVaccinated.Text = "Is the pet vaccinated?"
+        Me.grpVaccinated.BackColor = System.Drawing.Color.White
+        Me.grpVaccinated.Controls.Add(Me.rbVacYes)
+        Me.grpVaccinated.Controls.Add(Me.rbVacNo)
+        Me.grpVaccinated.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.grpVaccinated.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.grpVaccinated.Location = New System.Drawing.Point(12, 86)
+        Me.grpVaccinated.Name = "grpVaccinated"
+        Me.grpVaccinated.Size = New System.Drawing.Size(256, 54)
+        Me.grpVaccinated.TabIndex = 1
+        Me.grpVaccinated.TabStop = False
+        Me.grpVaccinated.Text = "Is the pet vaccinated?"
         '
         'rbVacYes
         '
@@ -451,10 +459,10 @@ Partial Class Form4
         Me.rbVacYes.Checked = True
         Me.rbVacYes.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbVacYes.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbVacYes.Location = New System.Drawing.Point(15, 105)
+        Me.rbVacYes.Location = New System.Drawing.Point(14, 24)
         Me.rbVacYes.Name = "rbVacYes"
         Me.rbVacYes.Size = New System.Drawing.Size(42, 19)
-        Me.rbVacYes.TabIndex = 4
+        Me.rbVacYes.TabIndex = 0
         Me.rbVacYes.TabStop = True
         Me.rbVacYes.Text = "Yes"
         Me.rbVacYes.UseVisualStyleBackColor = True
@@ -464,10 +472,10 @@ Partial Class Form4
         Me.rbVacNo.AutoSize = True
         Me.rbVacNo.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbVacNo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbVacNo.Location = New System.Drawing.Point(80, 105)
+        Me.rbVacNo.Location = New System.Drawing.Point(84, 24)
         Me.rbVacNo.Name = "rbVacNo"
         Me.rbVacNo.Size = New System.Drawing.Size(41, 19)
-        Me.rbVacNo.TabIndex = 5
+        Me.rbVacNo.TabIndex = 1
         Me.rbVacNo.Text = "No"
         Me.rbVacNo.UseVisualStyleBackColor = True
         '
@@ -476,10 +484,10 @@ Partial Class Form4
         Me.lblVacStatus.AutoSize = True
         Me.lblVacStatus.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
         Me.lblVacStatus.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.lblVacStatus.Location = New System.Drawing.Point(12, 145)
+        Me.lblVacStatus.Location = New System.Drawing.Point(12, 152)
         Me.lblVacStatus.Name = "lblVacStatus"
         Me.lblVacStatus.Size = New System.Drawing.Size(109, 15)
-        Me.lblVacStatus.TabIndex = 6
+        Me.lblVacStatus.TabIndex = 2
         Me.lblVacStatus.Text = "Vaccine Complete:"
         '
         'cboVacStatus
@@ -488,47 +496,35 @@ Partial Class Form4
         Me.cboVacStatus.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.cboVacStatus.FormattingEnabled = True
         Me.cboVacStatus.Items.AddRange(New Object() {"Complete", "Incomplete", "Unknown"})
-        Me.cboVacStatus.Location = New System.Drawing.Point(15, 165)
+        Me.cboVacStatus.Location = New System.Drawing.Point(15, 172)
         Me.cboVacStatus.Name = "cboVacStatus"
         Me.cboVacStatus.Size = New System.Drawing.Size(250, 21)
-        Me.cboVacStatus.TabIndex = 7
+        Me.cboVacStatus.TabIndex = 3
         '
         'lblVacKind
         '
         Me.lblVacKind.AutoSize = True
         Me.lblVacKind.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
         Me.lblVacKind.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.lblVacKind.Location = New System.Drawing.Point(12, 205)
+        Me.lblVacKind.Location = New System.Drawing.Point(12, 208)
         Me.lblVacKind.Name = "lblVacKind"
         Me.lblVacKind.Size = New System.Drawing.Size(126, 15)
-        Me.lblVacKind.TabIndex = 8
+        Me.lblVacKind.TabIndex = 4
         Me.lblVacKind.Text = "What kind of vaccine?"
         '
         'txtVacKind
         '
         Me.txtVacKind.Font = New System.Drawing.Font("Segoe UI", 8.5!)
-        Me.txtVacKind.Location = New System.Drawing.Point(15, 225)
+        Me.txtVacKind.Location = New System.Drawing.Point(15, 228)
         Me.txtVacKind.Name = "txtVacKind"
         Me.txtVacKind.Size = New System.Drawing.Size(250, 23)
-        Me.txtVacKind.TabIndex = 9
+        Me.txtVacKind.TabIndex = 5
         '
         'grpTraits
         '
         Me.grpTraits.BackColor = System.Drawing.Color.White
-        Me.grpTraits.Controls.Add(Me.lblTemperament)
-        Me.grpTraits.Controls.Add(Me.rbTemp1)
-        Me.grpTraits.Controls.Add(Me.rbTemp2)
-        Me.grpTraits.Controls.Add(Me.rbTemp3)
-        Me.grpTraits.Controls.Add(Me.rbTemp4)
-        Me.grpTraits.Controls.Add(Me.rbTemp5)
-        Me.grpTraits.Controls.Add(Me.lblTempHint)
-        Me.grpTraits.Controls.Add(Me.lblClinginess)
-        Me.grpTraits.Controls.Add(Me.rbCling1)
-        Me.grpTraits.Controls.Add(Me.rbCling2)
-        Me.grpTraits.Controls.Add(Me.rbCling3)
-        Me.grpTraits.Controls.Add(Me.rbCling4)
-        Me.grpTraits.Controls.Add(Me.rbCling5)
-        Me.grpTraits.Controls.Add(Me.lblClingHint)
+        Me.grpTraits.Controls.Add(Me.grpTemperament)
+        Me.grpTraits.Controls.Add(Me.grpClinginess)
         Me.grpTraits.Font = New System.Drawing.Font("Segoe UI", 9.5!, System.Drawing.FontStyle.Bold)
         Me.grpTraits.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
         Me.grpTraits.Location = New System.Drawing.Point(620, 115)
@@ -538,26 +534,33 @@ Partial Class Form4
         Me.grpTraits.TabStop = False
         Me.grpTraits.Text = "Personality Traits:"
         '
-        'lblTemperament
+        'grpTemperament
         '
-        Me.lblTemperament.AutoSize = True
-        Me.lblTemperament.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
-        Me.lblTemperament.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.lblTemperament.Location = New System.Drawing.Point(12, 30)
-        Me.lblTemperament.Name = "lblTemperament"
-        Me.lblTemperament.Size = New System.Drawing.Size(124, 15)
-        Me.lblTemperament.TabIndex = 0
-        Me.lblTemperament.Text = "Temperament (1 to 5)"
+        Me.grpTemperament.BackColor = System.Drawing.Color.White
+        Me.grpTemperament.Controls.Add(Me.rbTemp1)
+        Me.grpTemperament.Controls.Add(Me.rbTemp2)
+        Me.grpTemperament.Controls.Add(Me.rbTemp3)
+        Me.grpTemperament.Controls.Add(Me.rbTemp4)
+        Me.grpTemperament.Controls.Add(Me.rbTemp5)
+        Me.grpTemperament.Controls.Add(Me.lblTempHint)
+        Me.grpTemperament.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.grpTemperament.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.grpTemperament.Location = New System.Drawing.Point(12, 26)
+        Me.grpTemperament.Name = "grpTemperament"
+        Me.grpTemperament.Size = New System.Drawing.Size(256, 105)
+        Me.grpTemperament.TabIndex = 0
+        Me.grpTemperament.TabStop = False
+        Me.grpTemperament.Text = "Temperament (1 to 5)"
         '
         'rbTemp1
         '
         Me.rbTemp1.AutoSize = True
         Me.rbTemp1.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbTemp1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbTemp1.Location = New System.Drawing.Point(15, 55)
+        Me.rbTemp1.Location = New System.Drawing.Point(12, 30)
         Me.rbTemp1.Name = "rbTemp1"
         Me.rbTemp1.Size = New System.Drawing.Size(31, 19)
-        Me.rbTemp1.TabIndex = 1
+        Me.rbTemp1.TabIndex = 0
         Me.rbTemp1.Text = "1"
         Me.rbTemp1.UseVisualStyleBackColor = True
         '
@@ -566,10 +569,10 @@ Partial Class Form4
         Me.rbTemp2.AutoSize = True
         Me.rbTemp2.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbTemp2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbTemp2.Location = New System.Drawing.Point(65, 55)
+        Me.rbTemp2.Location = New System.Drawing.Point(62, 30)
         Me.rbTemp2.Name = "rbTemp2"
         Me.rbTemp2.Size = New System.Drawing.Size(31, 19)
-        Me.rbTemp2.TabIndex = 2
+        Me.rbTemp2.TabIndex = 1
         Me.rbTemp2.Text = "2"
         Me.rbTemp2.UseVisualStyleBackColor = True
         '
@@ -579,10 +582,10 @@ Partial Class Form4
         Me.rbTemp3.Checked = True
         Me.rbTemp3.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbTemp3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbTemp3.Location = New System.Drawing.Point(115, 55)
+        Me.rbTemp3.Location = New System.Drawing.Point(112, 30)
         Me.rbTemp3.Name = "rbTemp3"
         Me.rbTemp3.Size = New System.Drawing.Size(31, 19)
-        Me.rbTemp3.TabIndex = 3
+        Me.rbTemp3.TabIndex = 2
         Me.rbTemp3.TabStop = True
         Me.rbTemp3.Text = "3"
         Me.rbTemp3.UseVisualStyleBackColor = True
@@ -592,10 +595,10 @@ Partial Class Form4
         Me.rbTemp4.AutoSize = True
         Me.rbTemp4.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbTemp4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbTemp4.Location = New System.Drawing.Point(165, 55)
+        Me.rbTemp4.Location = New System.Drawing.Point(162, 30)
         Me.rbTemp4.Name = "rbTemp4"
         Me.rbTemp4.Size = New System.Drawing.Size(31, 19)
-        Me.rbTemp4.TabIndex = 4
+        Me.rbTemp4.TabIndex = 3
         Me.rbTemp4.Text = "4"
         Me.rbTemp4.UseVisualStyleBackColor = True
         '
@@ -604,10 +607,10 @@ Partial Class Form4
         Me.rbTemp5.AutoSize = True
         Me.rbTemp5.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbTemp5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbTemp5.Location = New System.Drawing.Point(215, 55)
+        Me.rbTemp5.Location = New System.Drawing.Point(212, 30)
         Me.rbTemp5.Name = "rbTemp5"
         Me.rbTemp5.Size = New System.Drawing.Size(31, 19)
-        Me.rbTemp5.TabIndex = 5
+        Me.rbTemp5.TabIndex = 4
         Me.rbTemp5.Text = "5"
         Me.rbTemp5.UseVisualStyleBackColor = True
         '
@@ -616,32 +619,39 @@ Partial Class Form4
         Me.lblTempHint.AutoSize = True
         Me.lblTempHint.Font = New System.Drawing.Font("Segoe UI", 7.5!)
         Me.lblTempHint.ForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.lblTempHint.Location = New System.Drawing.Point(12, 85)
+        Me.lblTempHint.Location = New System.Drawing.Point(10, 66)
         Me.lblTempHint.Name = "lblTempHint"
         Me.lblTempHint.Size = New System.Drawing.Size(225, 12)
-        Me.lblTempHint.TabIndex = 6
+        Me.lblTempHint.TabIndex = 5
         Me.lblTempHint.Text = "Chill                     Mid                     Hyper"
         '
-        'lblClinginess
+        'grpClinginess
         '
-        Me.lblClinginess.AutoSize = True
-        Me.lblClinginess.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
-        Me.lblClinginess.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.lblClinginess.Location = New System.Drawing.Point(12, 140)
-        Me.lblClinginess.Name = "lblClinginess"
-        Me.lblClinginess.Size = New System.Drawing.Size(107, 15)
-        Me.lblClinginess.TabIndex = 7
-        Me.lblClinginess.Text = "Clinginess (1 to 5)"
+        Me.grpClinginess.BackColor = System.Drawing.Color.White
+        Me.grpClinginess.Controls.Add(Me.rbCling1)
+        Me.grpClinginess.Controls.Add(Me.rbCling2)
+        Me.grpClinginess.Controls.Add(Me.rbCling3)
+        Me.grpClinginess.Controls.Add(Me.rbCling4)
+        Me.grpClinginess.Controls.Add(Me.rbCling5)
+        Me.grpClinginess.Controls.Add(Me.lblClingHint)
+        Me.grpClinginess.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.grpClinginess.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.grpClinginess.Location = New System.Drawing.Point(12, 146)
+        Me.grpClinginess.Name = "grpClinginess"
+        Me.grpClinginess.Size = New System.Drawing.Size(256, 105)
+        Me.grpClinginess.TabIndex = 1
+        Me.grpClinginess.TabStop = False
+        Me.grpClinginess.Text = "Clinginess (1 to 5)"
         '
         'rbCling1
         '
         Me.rbCling1.AutoSize = True
         Me.rbCling1.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbCling1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbCling1.Location = New System.Drawing.Point(15, 165)
+        Me.rbCling1.Location = New System.Drawing.Point(12, 30)
         Me.rbCling1.Name = "rbCling1"
         Me.rbCling1.Size = New System.Drawing.Size(31, 19)
-        Me.rbCling1.TabIndex = 8
+        Me.rbCling1.TabIndex = 0
         Me.rbCling1.Text = "1"
         Me.rbCling1.UseVisualStyleBackColor = True
         '
@@ -650,10 +660,10 @@ Partial Class Form4
         Me.rbCling2.AutoSize = True
         Me.rbCling2.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbCling2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbCling2.Location = New System.Drawing.Point(65, 165)
+        Me.rbCling2.Location = New System.Drawing.Point(62, 30)
         Me.rbCling2.Name = "rbCling2"
         Me.rbCling2.Size = New System.Drawing.Size(31, 19)
-        Me.rbCling2.TabIndex = 9
+        Me.rbCling2.TabIndex = 1
         Me.rbCling2.Text = "2"
         Me.rbCling2.UseVisualStyleBackColor = True
         '
@@ -663,10 +673,10 @@ Partial Class Form4
         Me.rbCling3.Checked = True
         Me.rbCling3.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbCling3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbCling3.Location = New System.Drawing.Point(115, 165)
+        Me.rbCling3.Location = New System.Drawing.Point(112, 30)
         Me.rbCling3.Name = "rbCling3"
         Me.rbCling3.Size = New System.Drawing.Size(31, 19)
-        Me.rbCling3.TabIndex = 10
+        Me.rbCling3.TabIndex = 2
         Me.rbCling3.TabStop = True
         Me.rbCling3.Text = "3"
         Me.rbCling3.UseVisualStyleBackColor = True
@@ -676,10 +686,10 @@ Partial Class Form4
         Me.rbCling4.AutoSize = True
         Me.rbCling4.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbCling4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbCling4.Location = New System.Drawing.Point(165, 165)
+        Me.rbCling4.Location = New System.Drawing.Point(162, 30)
         Me.rbCling4.Name = "rbCling4"
         Me.rbCling4.Size = New System.Drawing.Size(31, 19)
-        Me.rbCling4.TabIndex = 11
+        Me.rbCling4.TabIndex = 3
         Me.rbCling4.Text = "4"
         Me.rbCling4.UseVisualStyleBackColor = True
         '
@@ -688,10 +698,10 @@ Partial Class Form4
         Me.rbCling5.AutoSize = True
         Me.rbCling5.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.rbCling5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.rbCling5.Location = New System.Drawing.Point(215, 165)
+        Me.rbCling5.Location = New System.Drawing.Point(212, 30)
         Me.rbCling5.Name = "rbCling5"
         Me.rbCling5.Size = New System.Drawing.Size(31, 19)
-        Me.rbCling5.TabIndex = 12
+        Me.rbCling5.TabIndex = 4
         Me.rbCling5.Text = "5"
         Me.rbCling5.UseVisualStyleBackColor = True
         '
@@ -700,10 +710,10 @@ Partial Class Form4
         Me.lblClingHint.AutoSize = True
         Me.lblClingHint.Font = New System.Drawing.Font("Segoe UI", 7.5!)
         Me.lblClingHint.ForeColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer), CType(CType(100, Byte), Integer))
-        Me.lblClingHint.Location = New System.Drawing.Point(12, 195)
+        Me.lblClingHint.Location = New System.Drawing.Point(10, 66)
         Me.lblClingHint.Name = "lblClingHint"
         Me.lblClingHint.Size = New System.Drawing.Size(227, 12)
-        Me.lblClingHint.TabIndex = 13
+        Me.lblClingHint.TabIndex = 5
         Me.lblClingHint.Text = "Cuddler                  Mid             Independent"
         '
         'grpOwner
@@ -879,8 +889,16 @@ Partial Class Form4
         Me.grpPetInfo.PerformLayout()
         Me.grpHealth.ResumeLayout(False)
         Me.grpHealth.PerformLayout()
+        Me.grpLiveWith.ResumeLayout(False)
+        Me.grpLiveWith.PerformLayout()
+        Me.grpVaccinated.ResumeLayout(False)
+        Me.grpVaccinated.PerformLayout()
         Me.grpTraits.ResumeLayout(False)
         Me.grpTraits.PerformLayout()
+        Me.grpTemperament.ResumeLayout(False)
+        Me.grpTemperament.PerformLayout()
+        Me.grpClinginess.ResumeLayout(False)
+        Me.grpClinginess.PerformLayout()
         Me.grpOwner.ResumeLayout(False)
         Me.grpOwner.PerformLayout()
         Me.grpPhoto.ResumeLayout(False)

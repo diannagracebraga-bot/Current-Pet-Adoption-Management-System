@@ -14,366 +14,330 @@ Partial Class Form7
 
     Private components As System.ComponentModel.IContainer
 
-    Friend WithEvents pnlHeader As System.Windows.Forms.Panel
-    Friend WithEvents lblBrand As System.Windows.Forms.Label
     Friend WithEvents btnBack As System.Windows.Forms.Button
-    Friend WithEvents btnSet As System.Windows.Forms.Button
-    Friend WithEvents btnRecords As System.Windows.Forms.Button
+    Friend WithEvents lblBrand As System.Windows.Forms.Label
     Friend WithEvents lblTitle As System.Windows.Forms.Label
     Friend WithEvents lblSubtitle As System.Windows.Forms.Label
-    Friend WithEvents grpFilter As System.Windows.Forms.GroupBox
-    Friend WithEvents grpSpecies As System.Windows.Forms.GroupBox
-    Friend WithEvents rbAll As System.Windows.Forms.RadioButton
-    Friend WithEvents rbDog As System.Windows.Forms.RadioButton
-    Friend WithEvents rbCat As System.Windows.Forms.RadioButton
-    Friend WithEvents rbSmall As System.Windows.Forms.RadioButton
-    Friend WithEvents lblSearch As System.Windows.Forms.Label
+    Friend WithEvents pnlFilter As System.Windows.Forms.Panel
     Friend WithEvents txtSearch As System.Windows.Forms.TextBox
-    Friend WithEvents btnSearch As System.Windows.Forms.Button
-    Friend WithEvents chkVac As System.Windows.Forms.CheckBox
-    Friend WithEvents cboSize As System.Windows.Forms.ComboBox
+    Friend WithEvents btnAll As System.Windows.Forms.Button
+    Friend WithEvents btnDog As System.Windows.Forms.Button
+    Friend WithEvents btnCat As System.Windows.Forms.Button
+    Friend WithEvents btnSmall As System.Windows.Forms.Button
+    Friend WithEvents lblAgeGroup As System.Windows.Forms.Label
+    Friend WithEvents cboAge As System.Windows.Forms.ComboBox
     Friend WithEvents lblSize As System.Windows.Forms.Label
+    Friend WithEvents cboSize As System.Windows.Forms.ComboBox
+    Friend WithEvents lblGender As System.Windows.Forms.Label
+    Friend WithEvents cboGender As System.Windows.Forms.ComboBox
     Friend WithEvents btnReset As System.Windows.Forms.Button
-    Friend WithEvents btnAdopt As System.Windows.Forms.Button
+    Friend WithEvents lblAvailable As System.Windows.Forms.Label
     Friend WithEvents lblCount As System.Windows.Forms.Label
+    Friend WithEvents flpPets As System.Windows.Forms.FlowLayoutPanel
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.pnlHeader = New System.Windows.Forms.Panel()
-        Me.btnRecords = New System.Windows.Forms.Button()
-        Me.btnSet = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.lblBrand = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblSubtitle = New System.Windows.Forms.Label()
-        Me.grpFilter = New System.Windows.Forms.GroupBox()
+        Me.pnlFilter = New System.Windows.Forms.Panel()
         Me.btnReset = New System.Windows.Forms.Button()
-        Me.lblSize = New System.Windows.Forms.Label()
+        Me.cboGender = New System.Windows.Forms.ComboBox()
+        Me.lblGender = New System.Windows.Forms.Label()
         Me.cboSize = New System.Windows.Forms.ComboBox()
-        Me.chkVac = New System.Windows.Forms.CheckBox()
-        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.lblSize = New System.Windows.Forms.Label()
+        Me.cboAge = New System.Windows.Forms.ComboBox()
+        Me.lblAgeGroup = New System.Windows.Forms.Label()
+        Me.btnSmall = New System.Windows.Forms.Button()
+        Me.btnCat = New System.Windows.Forms.Button()
+        Me.btnDog = New System.Windows.Forms.Button()
+        Me.btnAll = New System.Windows.Forms.Button()
         Me.txtSearch = New System.Windows.Forms.TextBox()
-        Me.lblSearch = New System.Windows.Forms.Label()
-        Me.grpSpecies = New System.Windows.Forms.GroupBox()
-        Me.rbSmall = New System.Windows.Forms.RadioButton()
-        Me.rbCat = New System.Windows.Forms.RadioButton()
-        Me.rbDog = New System.Windows.Forms.RadioButton()
-        Me.rbAll = New System.Windows.Forms.RadioButton()
-        Me.btnAdopt = New System.Windows.Forms.Button()
+        Me.lblAvailable = New System.Windows.Forms.Label()
         Me.lblCount = New System.Windows.Forms.Label()
-        Me.pnlHeader.SuspendLayout()
-        Me.grpFilter.SuspendLayout()
-        Me.grpSpecies.SuspendLayout()
+        Me.flpPets = New System.Windows.Forms.FlowLayoutPanel()
+        Me.pnlFilter.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'pnlHeader
-        '
-        Me.pnlHeader.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.pnlHeader.Controls.Add(Me.btnRecords)
-        Me.pnlHeader.Controls.Add(Me.btnSet)
-        Me.pnlHeader.Controls.Add(Me.btnBack)
-        Me.pnlHeader.Controls.Add(Me.lblBrand)
-        Me.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlHeader.Location = New System.Drawing.Point(0, 0)
-        Me.pnlHeader.Name = "pnlHeader"
-        Me.pnlHeader.Size = New System.Drawing.Size(1004, 60)
-        Me.pnlHeader.TabIndex = 0
-        '
-        'btnRecords
-        '
-        Me.btnRecords.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnRecords.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.btnRecords.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRecords.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnRecords.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(27, Byte), Integer))
-        Me.btnRecords.Location = New System.Drawing.Point(860, 14)
-        Me.btnRecords.Name = "btnRecords"
-        Me.btnRecords.Size = New System.Drawing.Size(125, 32)
-        Me.btnRecords.TabIndex = 3
-        Me.btnRecords.Text = "My Records"
-        Me.btnRecords.UseVisualStyleBackColor = False
-        '
-        'btnSet
-        '
-        Me.btnSet.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSet.BackColor = System.Drawing.Color.FromArgb(CType(CType(251, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.btnSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSet.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(27, Byte), Integer))
-        Me.btnSet.Location = New System.Drawing.Point(725, 14)
-        Me.btnSet.Name = "btnSet"
-        Me.btnSet.Size = New System.Drawing.Size(125, 32)
-        Me.btnSet.TabIndex = 2
-        Me.btnSet.Text = "+ Set Adoption"
-        Me.btnSet.UseVisualStyleBackColor = False
         '
         'btnBack
         '
         Me.btnBack.BackColor = System.Drawing.Color.White
+        Me.btnBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(216, Byte), Integer))
         Me.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBack.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(23, Byte), Integer), CType(CType(92, Byte), Integer), CType(CType(30, Byte), Integer))
-        Me.btnBack.Location = New System.Drawing.Point(195, 14)
+        Me.btnBack.Font = New System.Drawing.Font("Segoe UI", 8.75!, System.Drawing.FontStyle.Bold)
+        Me.btnBack.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.btnBack.Location = New System.Drawing.Point(24, 16)
         Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(120, 32)
-        Me.btnBack.TabIndex = 1
-        Me.btnBack.Text = "← Back to Home"
+        Me.btnBack.Size = New System.Drawing.Size(156, 32)
+        Me.btnBack.TabIndex = 0
+        Me.btnBack.Text = "← Back to Dashboard"
         Me.btnBack.UseVisualStyleBackColor = False
         '
         'lblBrand
         '
+        Me.lblBrand.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblBrand.AutoSize = True
-        Me.lblBrand.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold)
-        Me.lblBrand.ForeColor = System.Drawing.Color.White
-        Me.lblBrand.Location = New System.Drawing.Point(20, 18)
+        Me.lblBrand.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.lblBrand.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lblBrand.Location = New System.Drawing.Point(858, 22)
         Me.lblBrand.Name = "lblBrand"
-        Me.lblBrand.Size = New System.Drawing.Size(127, 21)
-        Me.lblBrand.TabIndex = 0
-        Me.lblBrand.Text = "🐾 PAWHAVEN"
+        Me.lblBrand.Size = New System.Drawing.Size(122, 15)
+        Me.lblBrand.TabIndex = 1
+        Me.lblBrand.Text = "ADOPT ME CATALOG"
         '
         'lblTitle
         '
+        Me.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 22.0!, System.Drawing.FontStyle.Bold)
         Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(27, Byte), Integer))
-        Me.lblTitle.Location = New System.Drawing.Point(20, 75)
+        Me.lblTitle.Location = New System.Drawing.Point(342, 48)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(172, 32)
-        Me.lblTitle.TabIndex = 1
-        Me.lblTitle.Text = "Available Pets"
+        Me.lblTitle.Size = New System.Drawing.Size(356, 41)
+        Me.lblTitle.TabIndex = 2
+        Me.lblTitle.Text = "Find Your Perfect Match"
+        Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblSubtitle
         '
+        Me.lblSubtitle.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.lblSubtitle.AutoSize = True
-        Me.lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 9.25!)
         Me.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.lblSubtitle.Location = New System.Drawing.Point(22, 110)
+        Me.lblSubtitle.Location = New System.Drawing.Point(244, 92)
         Me.lblSubtitle.Name = "lblSubtitle"
-        Me.lblSubtitle.Size = New System.Drawing.Size(467, 17)
-        Me.lblSubtitle.TabIndex = 2
-        Me.lblSubtitle.Text = "Browse verified pets ready for loving forever homes. Filter by species and size."
+        Me.lblSubtitle.Size = New System.Drawing.Size(548, 17)
+        Me.lblSubtitle.TabIndex = 3
+        Me.lblSubtitle.Text = "Filter pets by temperament, species, and lifestyle requirements to find your idea" &
+    "l companion."
+        Me.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'grpFilter
+        'pnlFilter
         '
-        Me.grpFilter.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.grpFilter.BackColor = System.Drawing.Color.White
-        Me.grpFilter.Controls.Add(Me.btnReset)
-        Me.grpFilter.Controls.Add(Me.lblSize)
-        Me.grpFilter.Controls.Add(Me.cboSize)
-        Me.grpFilter.Controls.Add(Me.chkVac)
-        Me.grpFilter.Controls.Add(Me.btnSearch)
-        Me.grpFilter.Controls.Add(Me.txtSearch)
-        Me.grpFilter.Controls.Add(Me.lblSearch)
-        Me.grpFilter.Controls.Add(Me.grpSpecies)
-        Me.grpFilter.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.grpFilter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.grpFilter.Location = New System.Drawing.Point(24, 138)
-        Me.grpFilter.Name = "grpFilter"
-        Me.grpFilter.Size = New System.Drawing.Size(955, 125)
-        Me.grpFilter.TabIndex = 3
-        Me.grpFilter.TabStop = False
-        Me.grpFilter.Text = "Filter & Search Pets"
+        Me.pnlFilter.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.pnlFilter.BackColor = System.Drawing.Color.White
+        Me.pnlFilter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlFilter.Controls.Add(Me.btnReset)
+        Me.pnlFilter.Controls.Add(Me.cboGender)
+        Me.pnlFilter.Controls.Add(Me.lblGender)
+        Me.pnlFilter.Controls.Add(Me.cboSize)
+        Me.pnlFilter.Controls.Add(Me.lblSize)
+        Me.pnlFilter.Controls.Add(Me.cboAge)
+        Me.pnlFilter.Controls.Add(Me.lblAgeGroup)
+        Me.pnlFilter.Controls.Add(Me.btnSmall)
+        Me.pnlFilter.Controls.Add(Me.btnCat)
+        Me.pnlFilter.Controls.Add(Me.btnDog)
+        Me.pnlFilter.Controls.Add(Me.btnAll)
+        Me.pnlFilter.Controls.Add(Me.txtSearch)
+        Me.pnlFilter.Location = New System.Drawing.Point(145, 122)
+        Me.pnlFilter.Name = "pnlFilter"
+        Me.pnlFilter.Size = New System.Drawing.Size(730, 114)
+        Me.pnlFilter.TabIndex = 4
         '
         'btnReset
         '
-        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(242, Byte), Integer), CType(CType(238, Byte), Integer), CType(CType(217, Byte), Integer))
+        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(244, Byte), Integer), CType(CType(244, Byte), Integer), CType(CType(245, Byte), Integer))
+        Me.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(216, Byte), Integer))
         Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReset.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.btnReset.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(27, Byte), Integer))
-        Me.btnReset.Location = New System.Drawing.Point(835, 80)
+        Me.btnReset.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.btnReset.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.btnReset.Location = New System.Drawing.Point(562, 72)
         Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(100, 28)
-        Me.btnReset.TabIndex = 7
-        Me.btnReset.Text = "Reset All"
+        Me.btnReset.Size = New System.Drawing.Size(150, 26)
+        Me.btnReset.TabIndex = 11
+        Me.btnReset.Text = "🔄 Reset Filters"
         Me.btnReset.UseVisualStyleBackColor = False
         '
-        'lblSize
+        'cboGender
         '
-        Me.lblSize.AutoSize = True
-        Me.lblSize.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.lblSize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.lblSize.Location = New System.Drawing.Point(520, 87)
-        Me.lblSize.Name = "lblSize"
-        Me.lblSize.Size = New System.Drawing.Size(30, 13)
-        Me.lblSize.TabIndex = 6
-        Me.lblSize.Text = "Size:"
+        Me.cboGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboGender.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.cboGender.FormattingEnabled = True
+        Me.cboGender.Items.AddRange(New Object() {"Male & Female", "Male", "Female"})
+        Me.cboGender.Location = New System.Drawing.Point(382, 73)
+        Me.cboGender.Name = "cboGender"
+        Me.cboGender.Size = New System.Drawing.Size(168, 21)
+        Me.cboGender.TabIndex = 10
+        '
+        'lblGender
+        '
+        Me.lblGender.AutoSize = True
+        Me.lblGender.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Bold)
+        Me.lblGender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.lblGender.Location = New System.Drawing.Point(442, 55)
+        Me.lblGender.Name = "lblGender"
+        Me.lblGender.Size = New System.Drawing.Size(45, 13)
+        Me.lblGender.TabIndex = 9
+        Me.lblGender.Text = "Gender"
         '
         'cboSize
         '
         Me.cboSize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboSize.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.cboSize.Font = New System.Drawing.Font("Segoe UI", 8.5!)
         Me.cboSize.FormattingEnabled = True
-        Me.cboSize.Items.AddRange(New Object() {"All Sizes", "Small", "Medium", "Large"})
-        Me.cboSize.Location = New System.Drawing.Point(560, 83)
+        Me.cboSize.Items.AddRange(New Object() {"Any Size", "Small", "Medium", "Large"})
+        Me.cboSize.Location = New System.Drawing.Point(198, 73)
         Me.cboSize.Name = "cboSize"
-        Me.cboSize.Size = New System.Drawing.Size(120, 23)
-        Me.cboSize.TabIndex = 5
+        Me.cboSize.Size = New System.Drawing.Size(168, 21)
+        Me.cboSize.TabIndex = 8
         '
-        'chkVac
+        'lblSize
         '
-        Me.chkVac.AutoSize = True
-        Me.chkVac.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.chkVac.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.chkVac.Location = New System.Drawing.Point(695, 85)
-        Me.chkVac.Name = "chkVac"
-        Me.chkVac.Size = New System.Drawing.Size(111, 19)
-        Me.chkVac.TabIndex = 4
-        Me.chkVac.Text = "Vaccinated Only"
-        Me.chkVac.UseVisualStyleBackColor = True
+        Me.lblSize.AutoSize = True
+        Me.lblSize.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Bold)
+        Me.lblSize.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.lblSize.Location = New System.Drawing.Point(268, 55)
+        Me.lblSize.Name = "lblSize"
+        Me.lblSize.Size = New System.Drawing.Size(27, 13)
+        Me.lblSize.TabIndex = 7
+        Me.lblSize.Text = "Size"
         '
-        'btnSearch
+        'cboAge
         '
-        Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSearch.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.btnSearch.ForeColor = System.Drawing.Color.White
-        Me.btnSearch.Location = New System.Drawing.Point(395, 80)
-        Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(100, 28)
-        Me.btnSearch.TabIndex = 3
-        Me.btnSearch.Text = "Search"
-        Me.btnSearch.UseVisualStyleBackColor = False
+        Me.cboAge.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboAge.Font = New System.Drawing.Font("Segoe UI", 8.5!)
+        Me.cboAge.FormattingEnabled = True
+        Me.cboAge.Items.AddRange(New Object() {"Any Age", "Puppy/Kitten", "Young", "Adult", "Senior"})
+        Me.cboAge.Location = New System.Drawing.Point(16, 73)
+        Me.cboAge.Name = "cboAge"
+        Me.cboAge.Size = New System.Drawing.Size(168, 21)
+        Me.cboAge.TabIndex = 6
+        '
+        'lblAgeGroup
+        '
+        Me.lblAgeGroup.AutoSize = True
+        Me.lblAgeGroup.Font = New System.Drawing.Font("Segoe UI", 8.0!, System.Drawing.FontStyle.Bold)
+        Me.lblAgeGroup.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.lblAgeGroup.Location = New System.Drawing.Point(68, 55)
+        Me.lblAgeGroup.Name = "lblAgeGroup"
+        Me.lblAgeGroup.Size = New System.Drawing.Size(64, 13)
+        Me.lblAgeGroup.TabIndex = 5
+        Me.lblAgeGroup.Text = "Age Group"
+        '
+        'btnSmall
+        '
+        Me.btnSmall.BackColor = System.Drawing.Color.White
+        Me.btnSmall.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.btnSmall.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSmall.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnSmall.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.btnSmall.Location = New System.Drawing.Point(614, 15)
+        Me.btnSmall.Name = "btnSmall"
+        Me.btnSmall.Size = New System.Drawing.Size(98, 28)
+        Me.btnSmall.TabIndex = 4
+        Me.btnSmall.Text = "🐰 Small Pets"
+        Me.btnSmall.UseVisualStyleBackColor = False
+        '
+        'btnCat
+        '
+        Me.btnCat.BackColor = System.Drawing.Color.White
+        Me.btnCat.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.btnCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCat.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnCat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.btnCat.Location = New System.Drawing.Point(535, 15)
+        Me.btnCat.Name = "btnCat"
+        Me.btnCat.Size = New System.Drawing.Size(72, 28)
+        Me.btnCat.TabIndex = 3
+        Me.btnCat.Text = "🐱 Cats"
+        Me.btnCat.UseVisualStyleBackColor = False
+        '
+        'btnDog
+        '
+        Me.btnDog.BackColor = System.Drawing.Color.White
+        Me.btnDog.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(216, Byte), Integer))
+        Me.btnDog.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDog.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnDog.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
+        Me.btnDog.Location = New System.Drawing.Point(452, 15)
+        Me.btnDog.Name = "btnDog"
+        Me.btnDog.Size = New System.Drawing.Size(76, 28)
+        Me.btnDog.TabIndex = 2
+        Me.btnDog.Text = "🐶 Dogs"
+        Me.btnDog.UseVisualStyleBackColor = False
+        '
+        'btnAll
+        '
+        Me.btnAll.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.btnAll.FlatAppearance.BorderSize = 0
+        Me.btnAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAll.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.btnAll.ForeColor = System.Drawing.Color.White
+        Me.btnAll.Location = New System.Drawing.Point(374, 15)
+        Me.btnAll.Name = "btnAll"
+        Me.btnAll.Size = New System.Drawing.Size(72, 28)
+        Me.btnAll.TabIndex = 1
+        Me.btnAll.Text = "All Pets"
+        Me.btnAll.UseVisualStyleBackColor = False
         '
         'txtSearch
         '
-        Me.txtSearch.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.txtSearch.Location = New System.Drawing.Point(135, 82)
+        Me.txtSearch.Font = New System.Drawing.Font("Segoe UI", 9.5!)
+        Me.txtSearch.Location = New System.Drawing.Point(16, 17)
         Me.txtSearch.Name = "txtSearch"
-        Me.txtSearch.Size = New System.Drawing.Size(250, 25)
-        Me.txtSearch.TabIndex = 2
+        Me.txtSearch.Size = New System.Drawing.Size(348, 24)
+        Me.txtSearch.TabIndex = 0
         '
-        'lblSearch
+        'lblAvailable
         '
-        Me.lblSearch.AutoSize = True
-        Me.lblSearch.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.lblSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.lblSearch.Location = New System.Drawing.Point(15, 87)
-        Me.lblSearch.Name = "lblSearch"
-        Me.lblSearch.Size = New System.Drawing.Size(123, 15)
-        Me.lblSearch.TabIndex = 1
-        Me.lblSearch.Text = "Search Name/Breed:"
-        '
-        'grpSpecies
-        '
-        Me.grpSpecies.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.grpSpecies.Controls.Add(Me.rbSmall)
-        Me.grpSpecies.Controls.Add(Me.rbCat)
-        Me.grpSpecies.Controls.Add(Me.rbDog)
-        Me.grpSpecies.Controls.Add(Me.rbAll)
-        Me.grpSpecies.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.grpSpecies.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.grpSpecies.Location = New System.Drawing.Point(15, 22)
-        Me.grpSpecies.Name = "grpSpecies"
-        Me.grpSpecies.Size = New System.Drawing.Size(920, 50)
-        Me.grpSpecies.TabIndex = 0
-        Me.grpSpecies.TabStop = False
-        Me.grpSpecies.Text = "Select Species (User Selection)"
-        '
-        'rbSmall
-        '
-        Me.rbSmall.AutoSize = True
-        Me.rbSmall.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.rbSmall.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.rbSmall.Location = New System.Drawing.Point(400, 20)
-        Me.rbSmall.Name = "rbSmall"
-        Me.rbSmall.Size = New System.Drawing.Size(115, 19)
-        Me.rbSmall.TabIndex = 3
-        Me.rbSmall.Text = "🐰 Small Animals"
-        Me.rbSmall.UseVisualStyleBackColor = True
-        '
-        'rbCat
-        '
-        Me.rbCat.AutoSize = True
-        Me.rbCat.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.rbCat.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.rbCat.Location = New System.Drawing.Point(260, 20)
-        Me.rbCat.Name = "rbCat"
-        Me.rbCat.Size = New System.Drawing.Size(63, 19)
-        Me.rbCat.TabIndex = 2
-        Me.rbCat.Text = "🐱 Cats"
-        Me.rbCat.UseVisualStyleBackColor = True
-        '
-        'rbDog
-        '
-        Me.rbDog.AutoSize = True
-        Me.rbDog.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.rbDog.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.rbDog.Location = New System.Drawing.Point(140, 20)
-        Me.rbDog.Name = "rbDog"
-        Me.rbDog.Size = New System.Drawing.Size(67, 19)
-        Me.rbDog.TabIndex = 1
-        Me.rbDog.Text = "🐶 Dogs"
-        Me.rbDog.UseVisualStyleBackColor = True
-        '
-        'rbAll
-        '
-        Me.rbAll.AutoSize = True
-        Me.rbAll.Checked = True
-        Me.rbAll.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.rbAll.ForeColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(42, Byte), Integer))
-        Me.rbAll.Location = New System.Drawing.Point(15, 20)
-        Me.rbAll.Name = "rbAll"
-        Me.rbAll.Size = New System.Drawing.Size(85, 19)
-        Me.rbAll.TabIndex = 0
-        Me.rbAll.TabStop = True
-        Me.rbAll.Text = "All Animals"
-        Me.rbAll.UseVisualStyleBackColor = True
-        '
-        'btnAdopt
-        '
-        Me.btnAdopt.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnAdopt.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.btnAdopt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAdopt.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
-        Me.btnAdopt.ForeColor = System.Drawing.Color.White
-        Me.btnAdopt.Location = New System.Drawing.Point(780, 580)
-        Me.btnAdopt.Name = "btnAdopt"
-        Me.btnAdopt.Size = New System.Drawing.Size(200, 38)
-        Me.btnAdopt.TabIndex = 5
-        Me.btnAdopt.Text = "🐾 Adopt / View Pet"
-        Me.btnAdopt.UseVisualStyleBackColor = False
+        Me.lblAvailable.AutoSize = True
+        Me.lblAvailable.Font = New System.Drawing.Font("Segoe UI", 13.0!, System.Drawing.FontStyle.Bold)
+        Me.lblAvailable.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(27, Byte), Integer))
+        Me.lblAvailable.Location = New System.Drawing.Point(24, 254)
+        Me.lblAvailable.Name = "lblAvailable"
+        Me.lblAvailable.Size = New System.Drawing.Size(382, 25)
+        Me.lblAvailable.TabIndex = 5
+        Me.lblAvailable.Text = "💚 Available Pets • Ready for loving homes"
         '
         'lblCount
         '
-        Me.lblCount.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.lblCount.AutoSize = True
-        Me.lblCount.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold)
-        Me.lblCount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.lblCount.Location = New System.Drawing.Point(24, 592)
+        Me.lblCount.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblCount.BackColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(229, Byte), Integer))
+        Me.lblCount.Font = New System.Drawing.Font("Segoe UI", 8.5!, System.Drawing.FontStyle.Bold)
+        Me.lblCount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(6, Byte), Integer), CType(CType(95, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.lblCount.Location = New System.Drawing.Point(868, 254)
         Me.lblCount.Name = "lblCount"
-        Me.lblCount.Size = New System.Drawing.Size(134, 15)
+        Me.lblCount.Size = New System.Drawing.Size(116, 26)
         Me.lblCount.TabIndex = 6
-        Me.lblCount.Text = "Showing 0 companions"
+        Me.lblCount.Text = "Showing 6 pets"
+        Me.lblCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'flpPets
+        '
+        Me.flpPets.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.flpPets.AutoScroll = True
+        Me.flpPets.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.flpPets.Location = New System.Drawing.Point(24, 290)
+        Me.flpPets.Name = "flpPets"
+        Me.flpPets.Size = New System.Drawing.Size(964, 385)
+        Me.flpPets.TabIndex = 7
         '
         'Form7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1004, 635)
+        Me.ClientSize = New System.Drawing.Size(1010, 690)
+        Me.Controls.Add(Me.flpPets)
         Me.Controls.Add(Me.lblCount)
-        Me.Controls.Add(Me.btnAdopt)
-        Me.Controls.Add(Me.grpFilter)
+        Me.Controls.Add(Me.lblAvailable)
+        Me.Controls.Add(Me.pnlFilter)
         Me.Controls.Add(Me.lblSubtitle)
         Me.Controls.Add(Me.lblTitle)
-        Me.Controls.Add(Me.pnlHeader)
+        Me.Controls.Add(Me.lblBrand)
+        Me.Controls.Add(Me.btnBack)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.MinimumSize = New System.Drawing.Size(850, 600)
+        Me.MinimumSize = New System.Drawing.Size(960, 620)
         Me.Name = "Form7"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PawHaven - Adopt Me Catalog"
-        Me.pnlHeader.ResumeLayout(False)
-        Me.pnlHeader.PerformLayout()
-        Me.grpFilter.ResumeLayout(False)
-        Me.grpFilter.PerformLayout()
-        Me.grpSpecies.ResumeLayout(False)
-        Me.grpSpecies.PerformLayout()
+        Me.pnlFilter.ResumeLayout(False)
+        Me.pnlFilter.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
 End Class
-

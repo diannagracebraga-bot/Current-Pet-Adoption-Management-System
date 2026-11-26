@@ -35,6 +35,9 @@ Partial Class Form1
     Friend WithEvents lblDesc3 As System.Windows.Forms.Label
     Friend WithEvents btnHistory As System.Windows.Forms.Button
     Friend WithEvents lblFeatured As System.Windows.Forms.Label
+    Friend WithEvents lblFeaturedSub As System.Windows.Forms.Label
+    Friend WithEvents lnkViewAll As System.Windows.Forms.LinkLabel
+    Friend WithEvents flpFeatured As System.Windows.Forms.FlowLayoutPanel
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
@@ -59,6 +62,9 @@ Partial Class Form1
         Me.btnHistory = New System.Windows.Forms.Button()
         Me.lblDesc3 = New System.Windows.Forms.Label()
         Me.lblFeatured = New System.Windows.Forms.Label()
+        Me.lblFeaturedSub = New System.Windows.Forms.Label()
+        Me.lnkViewAll = New System.Windows.Forms.LinkLabel()
+        Me.flpFeatured = New System.Windows.Forms.FlowLayoutPanel()
         Me.pnlHeader.SuspendLayout()
         Me.grpAdopt.SuspendLayout()
         Me.grpSet.SuspendLayout()
@@ -109,6 +115,7 @@ Partial Class Form1
         Me.btnAdmin.TabIndex = 6
         Me.btnAdmin.Text = "🛡 Admin Mode"
         Me.btnAdmin.UseVisualStyleBackColor = False
+        Me.btnAdmin.Visible = False
         '
         'btnAbout
         '
@@ -133,7 +140,7 @@ Partial Class Form1
         Me.btnRecords.Name = "btnRecords"
         Me.btnRecords.Size = New System.Drawing.Size(110, 32)
         Me.btnRecords.TabIndex = 4
-        Me.btnRecords.Text = "My Records"
+        Me.btnRecords.Text = "My Adoptions"
         Me.btnRecords.UseVisualStyleBackColor = False
         '
         'btnSet
@@ -192,11 +199,11 @@ Partial Class Form1
         '
         Me.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.lblTitle.AutoSize = True
-        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold)
+        Me.lblTitle.Font = New System.Drawing.Font("Segoe UI", 22.0!, System.Drawing.FontStyle.Bold)
         Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(27, Byte), Integer))
-        Me.lblTitle.Location = New System.Drawing.Point(260, 80)
+        Me.lblTitle.Location = New System.Drawing.Point(290, 74)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(405, 45)
+        Me.lblTitle.Size = New System.Drawing.Size(397, 40)
         Me.lblTitle.TabIndex = 1
         Me.lblTitle.Text = "Find your new best friend"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -205,11 +212,11 @@ Partial Class Form1
         '
         Me.lblSubtitle.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.lblSubtitle.AutoSize = True
-        Me.lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 11.0!)
         Me.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.lblSubtitle.Location = New System.Drawing.Point(295, 130)
+        Me.lblSubtitle.Location = New System.Drawing.Point(312, 118)
         Me.lblSubtitle.Name = "lblSubtitle"
-        Me.lblSubtitle.Size = New System.Drawing.Size(348, 21)
+        Me.lblSubtitle.Size = New System.Drawing.Size(344, 20)
         Me.lblSubtitle.TabIndex = 2
         Me.lblSubtitle.Text = "Give a loving pet a safe and happy forever home."
         Me.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -219,11 +226,11 @@ Partial Class Form1
         Me.grpAdopt.BackColor = System.Drawing.Color.White
         Me.grpAdopt.Controls.Add(Me.btnBrowse)
         Me.grpAdopt.Controls.Add(Me.lblDesc1)
-        Me.grpAdopt.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.grpAdopt.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.grpAdopt.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.grpAdopt.Location = New System.Drawing.Point(24, 175)
+        Me.grpAdopt.Location = New System.Drawing.Point(24, 152)
         Me.grpAdopt.Name = "grpAdopt"
-        Me.grpAdopt.Size = New System.Drawing.Size(290, 140)
+        Me.grpAdopt.Size = New System.Drawing.Size(296, 128)
         Me.grpAdopt.TabIndex = 3
         Me.grpAdopt.TabStop = False
         Me.grpAdopt.Text = "🐾 Adopt a Pet"
@@ -234,9 +241,9 @@ Partial Class Form1
         Me.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBrowse.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnBrowse.ForeColor = System.Drawing.Color.White
-        Me.btnBrowse.Location = New System.Drawing.Point(15, 95)
+        Me.btnBrowse.Location = New System.Drawing.Point(15, 86)
         Me.btnBrowse.Name = "btnBrowse"
-        Me.btnBrowse.Size = New System.Drawing.Size(160, 30)
+        Me.btnBrowse.Size = New System.Drawing.Size(155, 28)
         Me.btnBrowse.TabIndex = 1
         Me.btnBrowse.Text = "Browse Pets →"
         Me.btnBrowse.UseVisualStyleBackColor = False
@@ -245,23 +252,22 @@ Partial Class Form1
         '
         Me.lblDesc1.Font = New System.Drawing.Font("Segoe UI", 8.25!)
         Me.lblDesc1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.lblDesc1.Location = New System.Drawing.Point(12, 28)
+        Me.lblDesc1.Location = New System.Drawing.Point(12, 26)
         Me.lblDesc1.Name = "lblDesc1"
-        Me.lblDesc1.Size = New System.Drawing.Size(260, 60)
+        Me.lblDesc1.Size = New System.Drawing.Size(268, 52)
         Me.lblDesc1.TabIndex = 0
-        Me.lblDesc1.Text = "Explore dogs, cats, and small animals ready for adoption. Filter by species, age," &
-    " and lifestyle."
+        Me.lblDesc1.Text = "Explore dogs, cats, and small animals ready for adoption. Filter by species, age, and lifestyle."
         '
         'grpSet
         '
         Me.grpSet.BackColor = System.Drawing.Color.White
         Me.grpSet.Controls.Add(Me.btnPost)
         Me.grpSet.Controls.Add(Me.lblDesc2)
-        Me.grpSet.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.grpSet.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.grpSet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.grpSet.Location = New System.Drawing.Point(344, 175)
+        Me.grpSet.Location = New System.Drawing.Point(344, 152)
         Me.grpSet.Name = "grpSet"
-        Me.grpSet.Size = New System.Drawing.Size(290, 140)
+        Me.grpSet.Size = New System.Drawing.Size(296, 128)
         Me.grpSet.TabIndex = 4
         Me.grpSet.TabStop = False
         Me.grpSet.Text = "🤲 Set for Adoption"
@@ -272,9 +278,9 @@ Partial Class Form1
         Me.btnPost.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPost.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnPost.ForeColor = System.Drawing.Color.White
-        Me.btnPost.Location = New System.Drawing.Point(15, 95)
+        Me.btnPost.Location = New System.Drawing.Point(15, 86)
         Me.btnPost.Name = "btnPost"
-        Me.btnPost.Size = New System.Drawing.Size(160, 30)
+        Me.btnPost.Size = New System.Drawing.Size(155, 28)
         Me.btnPost.TabIndex = 1
         Me.btnPost.Text = "Submit Listing →"
         Me.btnPost.UseVisualStyleBackColor = False
@@ -283,12 +289,11 @@ Partial Class Form1
         '
         Me.lblDesc2.Font = New System.Drawing.Font("Segoe UI", 8.25!)
         Me.lblDesc2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.lblDesc2.Location = New System.Drawing.Point(12, 28)
+        Me.lblDesc2.Location = New System.Drawing.Point(12, 26)
         Me.lblDesc2.Name = "lblDesc2"
-        Me.lblDesc2.Size = New System.Drawing.Size(260, 60)
+        Me.lblDesc2.Size = New System.Drawing.Size(268, 52)
         Me.lblDesc2.TabIndex = 0
-        Me.lblDesc2.Text = "Rehome your pet safely. Register companion medical logs, traits, and temperament " &
-    "ratings."
+        Me.lblDesc2.Text = "Rehome your pet safely. Register companion medical logs, traits, and temperament ratings."
         '
         'grpRecords
         '
@@ -297,14 +302,14 @@ Partial Class Form1
         Me.grpRecords.BackColor = System.Drawing.Color.White
         Me.grpRecords.Controls.Add(Me.btnHistory)
         Me.grpRecords.Controls.Add(Me.lblDesc3)
-        Me.grpRecords.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.grpRecords.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold)
         Me.grpRecords.ForeColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
-        Me.grpRecords.Location = New System.Drawing.Point(664, 175)
+        Me.grpRecords.Location = New System.Drawing.Point(664, 152)
         Me.grpRecords.Name = "grpRecords"
-        Me.grpRecords.Size = New System.Drawing.Size(296, 140)
+        Me.grpRecords.Size = New System.Drawing.Size(296, 128)
         Me.grpRecords.TabIndex = 5
         Me.grpRecords.TabStop = False
-        Me.grpRecords.Text = "📋 My Pet Records"
+        Me.grpRecords.Text = "📋 My Adoptions"
         '
         'btnHistory
         '
@@ -312,9 +317,9 @@ Partial Class Form1
         Me.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnHistory.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
         Me.btnHistory.ForeColor = System.Drawing.Color.White
-        Me.btnHistory.Location = New System.Drawing.Point(15, 95)
+        Me.btnHistory.Location = New System.Drawing.Point(15, 86)
         Me.btnHistory.Name = "btnHistory"
-        Me.btnHistory.Size = New System.Drawing.Size(160, 30)
+        Me.btnHistory.Size = New System.Drawing.Size(155, 28)
         Me.btnHistory.TabIndex = 1
         Me.btnHistory.Text = "View Submissions →"
         Me.btnHistory.UseVisualStyleBackColor = False
@@ -323,30 +328,69 @@ Partial Class Form1
         '
         Me.lblDesc3.Font = New System.Drawing.Font("Segoe UI", 8.25!)
         Me.lblDesc3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(82, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.lblDesc3.Location = New System.Drawing.Point(12, 28)
+        Me.lblDesc3.Location = New System.Drawing.Point(12, 26)
         Me.lblDesc3.Name = "lblDesc3"
-        Me.lblDesc3.Size = New System.Drawing.Size(260, 60)
+        Me.lblDesc3.Size = New System.Drawing.Size(268, 52)
         Me.lblDesc3.TabIndex = 0
-        Me.lblDesc3.Text = "Monitor active listings, shelter staff verification status, and adoption applicat" &
-    "ions."
+        Me.lblDesc3.Text = "Monitor active listings, shelter staff verification status, and adoption applications."
         '
         'lblFeatured
         '
         Me.lblFeatured.AutoSize = True
-        Me.lblFeatured.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Bold)
+        Me.lblFeatured.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold)
         Me.lblFeatured.ForeColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(27, Byte), Integer))
-        Me.lblFeatured.Location = New System.Drawing.Point(24, 335)
+        Me.lblFeatured.Location = New System.Drawing.Point(24, 298)
         Me.lblFeatured.Name = "lblFeatured"
-        Me.lblFeatured.Size = New System.Drawing.Size(208, 25)
+        Me.lblFeatured.Size = New System.Drawing.Size(316, 30)
         Me.lblFeatured.TabIndex = 6
-        Me.lblFeatured.Text = "Featured Companions"
+        Me.lblFeatured.Text = "Featured Pets Looking for Homes"
+        '
+        'lblFeaturedSub
+        '
+        Me.lblFeaturedSub.AutoSize = True
+        Me.lblFeaturedSub.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.lblFeaturedSub.ForeColor = System.Drawing.Color.FromArgb(CType(CType(113, Byte), Integer), CType(CType(113, Byte), Integer), CType(CType(122, Byte), Integer))
+        Me.lblFeaturedSub.Location = New System.Drawing.Point(26, 328)
+        Me.lblFeaturedSub.Name = "lblFeaturedSub"
+        Me.lblFeaturedSub.Size = New System.Drawing.Size(218, 15)
+        Me.lblFeaturedSub.TabIndex = 7
+        Me.lblFeaturedSub.Text = "Urgent companions waiting to meet you"
+        '
+        'lnkViewAll
+        '
+        Me.lnkViewAll.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lnkViewAll.AutoSize = True
+        Me.lnkViewAll.Font = New System.Drawing.Font("Segoe UI", 9.5!, System.Drawing.FontStyle.Bold)
+        Me.lnkViewAll.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
+        Me.lnkViewAll.LinkColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.lnkViewAll.Location = New System.Drawing.Point(892, 310)
+        Me.lnkViewAll.Name = "lnkViewAll"
+        Me.lnkViewAll.Size = New System.Drawing.Size(68, 17)
+        Me.lnkViewAll.TabIndex = 8
+        Me.lnkViewAll.TabStop = True
+        Me.lnkViewAll.Text = "View All >"
+        '
+        'flpFeatured
+        '
+        Me.flpFeatured.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.flpFeatured.AutoScroll = True
+        Me.flpFeatured.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(234, Byte), Integer))
+        Me.flpFeatured.Location = New System.Drawing.Point(24, 354)
+        Me.flpFeatured.Name = "flpFeatured"
+        Me.flpFeatured.Size = New System.Drawing.Size(942, 338)
+        Me.flpFeatured.TabIndex = 9
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(247, Byte), Integer), CType(CType(234, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(984, 610)
+        Me.ClientSize = New System.Drawing.Size(984, 705)
+        Me.Controls.Add(Me.flpFeatured)
+        Me.Controls.Add(Me.lnkViewAll)
+        Me.Controls.Add(Me.lblFeaturedSub)
         Me.Controls.Add(Me.lblFeatured)
         Me.Controls.Add(Me.grpRecords)
         Me.Controls.Add(Me.grpSet)
@@ -355,7 +399,7 @@ Partial Class Form1
         Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.pnlHeader)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.MinimumSize = New System.Drawing.Size(800, 600)
+        Me.MinimumSize = New System.Drawing.Size(920, 680)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PawHaven - Find Your New Best Friend"
